@@ -10,3 +10,5 @@
 
 /storage/*.key
 /vendor
+
+.php_cs.cache
