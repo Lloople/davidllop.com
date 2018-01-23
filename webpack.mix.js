@@ -1,4 +1,6 @@
 let mix = require('laravel-mix');
+const tailwindcss = require('tailwindcss')
+const cssImport = require('postcss-import')
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +13,18 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix
+  .postCss('resources/assets/css/app.pcss', 'public/css', [
+    cssImport(),
+    tailwindcss('./tailwind.js')
+  ])
+  .browserSync({
+    proxy: {
+      target: 'localhost:8000',
+      reqHeaders: function () {
+        return {
+          host: 'localhost:3000'
+        };
+      }
+    }
+  })

@@ -9,9 +9,11 @@
 
     @yield('meta')
 
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+
     <title>Dieter Stinglhamber</title>
 </head>
-<body>
+<body class="font-sans">
     @yield('content')
 </body>
 </html>
