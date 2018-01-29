@@ -9,6 +9,7 @@
 
     @yield('meta')
 
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
     <title>Dieter Stinglhamber</title>

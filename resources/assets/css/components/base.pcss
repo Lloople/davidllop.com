@@ -1,4 +1,43 @@
+body {
+  @apply .bg-grey-lighter;
+}
+
 .a-very-handsome-fellow {
-  background: url(/media/me.jpg) no-repeat top center;
+  background-image: url(/media/me.jpg);
+  background-repeat-y: no-repeat;
+  background-repeat-x:no-repeat;
+  background-position-y: top;
+  background-position-x: center;
   background-size: cover;
+}
+
+.font-indie-flower {
+  font-family: Indie Flower, cursive;
+}
+
+.animated {
+  transition-duration: .2s;
+}
+
+.card {
+  @apply .relative .bg-white .py-8 .px-8 .border .border-grey-lighter;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: translateY(-.25rem);
+}
+
+.card::after {
+  content: ' ';
+}
+
+.card::after {
+  @apply .shadow .absolute .pin;
+  transition-duration: .2s;
+}
+
+.card:hover::after {
+  @apply .shadow-md;
+  transition-duration: .2s;
 }
