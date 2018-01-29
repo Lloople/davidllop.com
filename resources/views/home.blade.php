@@ -17,100 +17,54 @@
             </p>
         </div>
 
-        <div class="mt-4">
-            <a href="" class="block no-underline text-black">
-                <div class="card animated my-4">
-                    <p class="text-3xl mb-8 block font-bold text-black">
-                        Awesome title
-                    </p>
-                    <p class="text-xl">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut natus quis neque asperiores illum ullam repudiandae numquam nisi excepturi.
-                    </p>
-                    <p class="mt-8 text-grey-dark">
-                        On January 26th 2018
-                    </p>
-                </div>
-            </a>
+        @if (count($recentPosts) > 0)
+            <div class="mt-4">
+                @foreach($recentPosts as $post)
+                    <a href="" class="block no-underline text-black">
+                        <div class="card animated my-4">
+                            <p class="text-3xl mb-8 block font-bold text-black">
+                                {{ $post->title }}
+                            </p>
+                            <p class="text-xl">
+                                {{ $post->summary }}
+                            </p>
+                            <p class="mt-8 text-grey-dark">
+                                On January 26th 2018
+                            </p>
+                        </div>
+                    </a>
+                @endforeach
+            </div>
+        @endif
 
-            <a href="" class="block no-underline text-black">
-                <div class="card animated my-4">
-                    <p class="text-3xl mb-8 block font-bold text-black">
-                        Awesome title
-                    </p>
-                    <p class="text-xl">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut natus quis neque asperiores illum ullam repudiandae numquam nisi excepturi.
-                    </p>
-                    <p class="mt-8 text-grey-dark">
-                        On January 26th 2018
-                    </p>
-                </div>
-            </a>
-        </div>
-
-        <div class="mt-4 text-center">
-            Scroll down to see more
-        </div>
+        @if(count($posts) > 0)
+            <div class="mt-4 text-center">
+                Scroll down to see more
+            </div>
+        @endif
     </div>
 </div>
 
-<div class="w-full lg:w-1/2 mx-auto p-8">
+@if(count($posts) > 0)
+    <div class="w-full lg:w-1/2 mx-auto p-8">
 
-    <h2 class="my-8 block font-indie-flower text-4xl">Recent writings...</h2>
+        <h2 class="my-8 block font-indie-flower text-4xl">Recent writings...</h2>
 
-    <a href="" class="block no-underline text-black">
-        <div class="card animated my-4">
-            <p class="text-3xl mb-8 block font-bold text-black">
-                Awesome title
-            </p>
-            <p class="text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut natus quis neque asperiores illum ullam repudiandae numquam nisi excepturi.
-            </p>
-            <p class="mt-8 text-grey-dark">
-                On January 26th 2018
-            </p>
-        </div>
-    </a>
-
-    <a href="" class="block no-underline text-black">
-        <div class="card animated my-4">
-            <p class="text-3xl mb-8 block font-bold text-black">
-                Awesome title
-            </p>
-            <p class="text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut natus quis neque asperiores illum ullam repudiandae numquam nisi excepturi.
-            </p>
-            <p class="mt-8 text-grey-dark">
-                On January 26th 2018
-            </p>
-        </div>
-    </a>
-
-    <a href="" class="block no-underline text-black">
-        <div class="card animated my-4">
-            <p class="text-3xl mb-8 block font-bold text-black">
-                Awesome title
-            </p>
-            <p class="text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut natus quis neque asperiores illum ullam repudiandae numquam nisi excepturi.
-            </p>
-            <p class="mt-8 text-grey-dark">
-                On January 26th 2018
-            </p>
-        </div>
-    </a>
-
-    <a href="" class="block no-underline text-black">
-        <div class="card animated my-4">
-            <p class="text-3xl mb-8 block font-bold text-black">
-                Awesome title
-            </p>
-            <p class="text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut natus quis neque asperiores illum ullam repudiandae numquam nisi excepturi.
-            </p>
-            <p class="mt-8 text-grey-dark">
-                On January 26th 2018
-            </p>
-        </div>
-    </a>
-</div>
+        @foreach($posts as $post)
+            <a href="" class="block no-underline text-black">
+                <div class="card animated my-4">
+                    <p class="text-3xl mb-8 block font-bold text-black">
+                        {{ $post->title }}
+                    </p>
+                    <p class="text-xl">
+                        {{ $post->summary }}
+                    </p>
+                    <p class="mt-8 text-grey-dark">
+                        On January 26th 2018
+                    </p>
+                </div>
+            </a>
+        @endforeach
+    </div>
+@endif
 @endsection

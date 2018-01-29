@@ -43,6 +43,11 @@ return [
 
     'disks' => [
 
+        'posts' => [
+            'driver' => 'local',
+            'root' => base_path('app/Services/Blog/files'),
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
