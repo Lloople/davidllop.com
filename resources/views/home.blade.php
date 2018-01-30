@@ -1,5 +1,46 @@
 @extends('layouts.master')
 
+@section('meta')
+    <meta name="subject" content="Personal website">
+    <meta name="description" content="I'm a 25 years old nerd, passionate by web development, RPG's, fantasy books, Belgian beers and computers.">
+
+    <meta name="rating" content="General">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="me" href="https://dieterstinglhamber.me" type="text/html">
+    <link rel="me" href="mailto:dieter.stinglhamber@gmail.com">
+
+    @if (app()->env === 'production')
+        <base href="https://dieterstinglhamber.me">
+        <link rel="index" href="https://dieterstinglhamber.me">
+
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:">
+    @endif
+
+    <meta name="robots" content="index,follow,noodp">
+    <meta name="googlebot" content="index,follow">
+
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="google" content="notranslate">
+
+    <meta property="og:url" content="https://dieterstinglhamber.me/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dieter Stinglhamber">
+    <meta property="og:image" content="{{ asset('media/me.jpg') }}">
+    <meta property="og:description" content="I'm a 25 years old nerd, passionate by web development, RPG's, fantasy books, Belgian beers and computers.">
+    <meta property="og:site_name" content="Dieter Stinglhamber">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:author" content="Dieter Stinglhamber">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@elhebert">
+    <meta name="twitter:creator" content="@elhebert">
+    <meta name="twitter:url" content="https://dieterstinglhamber.me/">
+    <meta name="twitter:title" content="Dieter Stinglhamber">
+    <meta name="twitter:description" content="I'm a 25 years old nerd, passionate by web development, RPG's, fantasy books, Belgian beers and computers.">
+    <meta name="twitter:image" content="{{ asset('media/me.jpg') }}">
+@endsection
+
 @section('content')
 <div class="flex w-screen h-screen relative flex-row bg-grey-lightest">
     <div class="relative overflow-hidden w-1/2 lg:flex justify-center hidden">
