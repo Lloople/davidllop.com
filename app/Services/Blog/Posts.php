@@ -17,7 +17,7 @@ class Posts
         $this->disk = $filesystem->disk('posts');
     }
 
-    public function all()
+    public function all(): Collection
     {
         return Cache::rememberForever('posts.all', function () {
             return $this->getAllPosts();
