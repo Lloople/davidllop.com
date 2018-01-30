@@ -48,6 +48,10 @@
         </div>
     </div>
     <div class="relative overflow-auto p-8 lg:w-1/2 w-full h-full flex-col justify-around flex">
+        <div class="absolute pin-t pin-r m-2">
+            <a href="https://twitter.com/elhebert" class="text-blue-light no-underline mr-1 hover:text-blue">@svg('twitter')</a>
+            <a href="https://github.com/Elhebert" class="text-grey-darker no-underline ml-1 hover:text-black">@svg('github')</a>
+        </div>
         <div class="mb-8">
             <h1 class="mb-8 block font-indie-flower text-5xl">Trust me, I'm a developer</h1>
             <p class="my-4 text-xl block font-mono">
