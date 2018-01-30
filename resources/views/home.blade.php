@@ -14,7 +14,7 @@
         <base href="https://dieterstinglhamber.me">
         <link rel="index" href="https://dieterstinglhamber.me">
 
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; script-src 'self' https://www.google-analytics.com">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; script-src 'self' https://www.google-analytics.com; img-src 'self' https://www.google-analytics.com">
     @endif
 
     <meta name="robots" content="index,follow,noodp">
