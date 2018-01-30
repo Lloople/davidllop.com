@@ -2,6 +2,8 @@ let mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss')
 const cssImport = require('postcss-import')
 
+require('laravel-mix-purgecss')
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -18,6 +20,10 @@ mix
     cssImport(),
     tailwindcss('./tailwind.js')
   ])
+  .version()
+  .purgeCss()
+
+mix
   .browserSync({
     proxy: {
       target: 'localhost:8000',
