@@ -8,7 +8,7 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', {{ config('analytics.id') }});
+        gtag('config', '{{ config('analytics.id') }}');
     </script>
     @endif
 
