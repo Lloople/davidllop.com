@@ -48,6 +48,11 @@ return [
             'root' => base_path('app/Services/Blog/files'),
         ],
 
+        'assets' => [
+            'driver' => 'local',
+            'root' => base_path('public'),
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
