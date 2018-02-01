@@ -20,12 +20,13 @@
 
     @yield('meta')
 
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link
         href="{{ mix('css/app.css') }}"
         rel="stylesheet"
-        integrity="{{ sri('css/app.css') }}"
-        crossorigin="anonymous"
+        {{ Sri::html('css/app.css') }}
     >
 
     <title>Dieter Stinglhamber</title>
