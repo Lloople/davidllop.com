@@ -1,0 +1,22 @@
+.card {
+  @apply .relative .bg-white .py-8 .px-8 .border .border-grey-lighter;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: translateY(-.25rem);
+}
+
+.card::after {
+  content: ' ';
+}
+
+.card::after {
+  @apply .shadow .absolute .pin;
+  transition-duration: .2s;
+}
+
+.card:hover::after {
+  @apply .shadow-md;
+  transition-duration: .2s;
+}

@@ -15,6 +15,8 @@ require('laravel-mix-purgecss')
  |
  */
 
+mix.js('resources/assets/js/app.js', 'public/js')
+
 mix
   .postCss('resources/assets/css/app.pcss', 'public/css', [
     cssImport(),

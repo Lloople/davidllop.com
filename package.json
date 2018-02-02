@@ -10,14 +10,19 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
         "browser-sync": "^2.23.6",
         "browser-sync-webpack-plugin": "^1.2.0",
         "cross-env": "^5.1",
-        "laravel-mix": "^2.0",
-        "laravel-mix-purgecss": "^1.0.4",
+        "laravel-mix": "^2.0.0",
+        "laravel-mix-purgecss": "^1.0.5",
         "postcss-import": "^11.0.0"
     },
     "dependencies": {
+        "highlight.js": "^9.12.0",
         "tailwindcss": "^0.4.1"
     }
 }

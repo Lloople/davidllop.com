@@ -3,8 +3,10 @@
 namespace App\Services\Blog;
 
 use Illuminate\Contracts\Filesystem\Factory as Filesystem;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
+use League\CommonMark\CommonMarkConverter;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 
 class Posts
@@ -24,6 +26,12 @@ class Posts
         });
     }
 
+    public function find($slug)
+    {
+        return $this->all()
+            ->firstWhere('slug', '=', $slug);
+    }
+
     private function getAllPosts(): Collection
     {
         return collect($this->disk->files(''))
@@ -37,8 +45,9 @@ class Posts
                 return (object) [
                     'slug' => $slug,
                     'title' => $object->title,
-                    'summary' => $object->summary ?? substr($object->body(), 0, 125),
-                    'content' => $object->body(),
+                    'date' => Carbon::createFromTimestamp($object->date),
+                    'summary' => (new CommonMarkConverter())->convertToHtml($object->summary ?? substr($object->body(), 0, 125)),
+                    'content' => (new CommonMarkConverter())->convertToHtml($object->body()),
                 ];
             });
     }

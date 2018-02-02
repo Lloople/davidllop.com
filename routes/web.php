@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/{slug}', 'PostController@show')->name('post');

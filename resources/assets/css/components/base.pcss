@@ -1,5 +1,5 @@
 body {
-  @apply .bg-grey-lighter;
+  @apply .bg-grey-lightest;
 }
 
 .a-very-handsome-fellow {
@@ -15,29 +15,18 @@ body {
   font-family: Indie Flower, cursive;
 }
 
+.align-super {
+  vertical-align: super;
+}
+
 .animated {
   transition-duration: .2s;
 }
 
-.card {
-  @apply .relative .bg-white .py-8 .px-8 .border .border-grey-lighter;
-  transform: translateY(0);
+h1, h2, h3, h4, h5, h6 {
+  @apply .text-grey-darkest .mt-8 .mb-6 .font-sans;
 }
 
-.card:hover {
-  transform: translateY(-.25rem);
-}
-
-.card::after {
-  content: ' ';
-}
-
-.card::after {
-  @apply .shadow .absolute .pin;
-  transition-duration: .2s;
-}
-
-.card:hover::after {
-  @apply .shadow-md;
-  transition-duration: .2s;
+p {
+  @apply .my-4;
 }

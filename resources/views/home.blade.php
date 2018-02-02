@@ -51,16 +51,12 @@
 @endsection
 
 @section('content')
-<div class="flex w-screen h-screen relative flex-row bg-grey-lightest">
+<div class="flex w-screen h-screen relative flex-row">
     <div class="relative overflow-hidden w-1/2 lg:flex justify-center hidden">
         <div class="a-very-handsome-fellow h-full w-full">
         </div>
     </div>
-    <div class="relative overflow-auto p-8 lg:w-1/2 w-full h-full flex-col justify-around flex">
-        <div class="absolute pin-t pin-r m-2">
-            <a href="https://twitter.com/elhebert" class="text-blue-light no-underline mr-1 hover:text-blue">@svg('twitter')</a>
-            <a href="https://github.com/Elhebert" class="text-grey-darker no-underline ml-1 hover:text-black">@svg('github')</a>
-        </div>
+    <div class="relative p-8 lg:w-1/2 w-full h-full flex-col justify-around flex">
         <div class="mb-8">
             <h1 class="mb-8 block font-indie-flower text-5xl">Trust me, I'm a developer</h1>
             <p class="my-4 text-xl block font-mono">
@@ -73,21 +69,7 @@
 
         @if (count($recentPosts) > 0)
             <div class="mt-4">
-                @foreach($recentPosts as $post)
-                    <a href="" class="block no-underline text-black">
-                        <div class="card animated my-4">
-                            <p class="text-3xl mb-8 block font-bold text-black">
-                                {{ $post->title }}
-                            </p>
-                            <p class="text-xl">
-                                {{ $post->summary }}
-                            </p>
-                            <p class="mt-8 text-grey-dark">
-                                On January 26th 2018
-                            </p>
-                        </div>
-                    </a>
-                @endforeach
+                @each('_partials.cardPost', $recentPosts, 'post')
             </div>
         @endif
 
@@ -100,25 +82,11 @@
 </div>
 
 @if(count($posts) > 0)
-    <div class="w-full lg:w-1/2 mx-auto p-8">
+    <div class="w-full min-h-screen lg:w-1/2 mx-auto p-8">
 
         <h2 class="my-8 block font-indie-flower text-4xl">Recent writings...</h2>
 
-        @foreach($posts as $post)
-            <a href="" class="block no-underline text-black">
-                <div class="card animated my-4">
-                    <p class="text-3xl mb-8 block font-bold text-black">
-                        {{ $post->title }}
-                    </p>
-                    <p class="text-xl">
-                        {{ $post->summary }}
-                    </p>
-                    <p class="mt-8 text-grey-dark">
-                        On January 26th 2018
-                    </p>
-                </div>
-            </a>
-        @endforeach
+        @each('_partials.cardPost', $posts, 'post')
     </div>
 @endif
 @endsection
