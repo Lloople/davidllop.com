@@ -39,16 +39,17 @@ class Posts
                 return ends_with($file, '.md');
             })
             ->map(function ($file) {
-                [$slug, $extenstion] = explode('.', $file, 2);
+                [$date, $slug, $extenstion] = explode('.', $file, 3);
                 $object = YamlFrontMatter::parse($this->disk->get($file));
 
                 return (object) [
                     'slug' => $slug,
                     'title' => $object->title,
-                    'date' => Carbon::createFromTimestamp($object->date),
+                    'date' => Carbon::createFromFormat('Y-m-d', $date),
                     'summary' => (new CommonMarkConverter())->convertToHtml($object->summary ?? substr($object->body(), 0, 125)),
                     'content' => (new CommonMarkConverter())->convertToHtml($object->body()),
                 ];
-            });
+            })
+            ->sortByDesc('date');
     }
 }

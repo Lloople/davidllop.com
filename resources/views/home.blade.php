@@ -68,13 +68,13 @@
         </div>
 
         @if (count($recentPosts) > 0)
-            <div class="mt-4">
+            <div>
                 @each('_partials.cardPost', $recentPosts, 'post')
             </div>
         @endif
 
         @if(count($posts) > 0)
-            <div class="mt-4 text-center">
+            <div class="text-center">
                 Scroll down to see more
             </div>
         @endif

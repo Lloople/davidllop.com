@@ -3,10 +3,10 @@
         <p class="text-3xl mb-8 block font-bold text-black">
             {{ $post->title }}
         </p>
-        <p class="text-xl">
+        <div class="text-xl">
             {!! $post->summary !!}
-        </p>
-        <p class="mt-8 text-grey-dark">
+        </div>
+        <p class="mt-8 text-grey-dark font-bold">
             On {{ $post->date->format('F jS Y') }}
         </p>
     </div>
