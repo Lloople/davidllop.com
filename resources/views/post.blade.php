@@ -1,6 +1,52 @@
 @extends('layouts.master')
 
 @section('meta')
+    <meta name="description" content="{{ $post->summary }}">
+
+    <meta name="rating" content="General">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="me" href="https://dieterstinglhamber.me" type="text/html">
+    <link rel="me" href="mailto:dieter.stinglhamber@gmail.com">
+
+    @if (app()->env === 'production')
+        <base href="https://dieterstinglhamber.me">
+        <link rel="index" href="https://dieterstinglhamber.me">
+
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="
+                upgrade-insecure-requests;
+                default-src 'none';
+                style-src 'self' https://fonts.googleapis.com;
+                font-src https://fonts.gstatic.com data:;
+                script-src 'sha256-AYNJOvmbj6Gny6hzhcy5B7TuB6jucnb9unR858g9M9U=' https://www.googletagmanager.com https://www.google-analytics.com;
+                img-src 'self' https://www.google-analytics.com;"
+        >
+    @endif
+
+    <meta name="robots" content="index,follow,noodp">
+    <meta name="googlebot" content="index,follow">
+
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="google" content="notranslate">
+
+    <meta property="og:url" content="https://dieterstinglhamber.me/{{ $post->slug }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ $post->title }}">
+    <meta property="og:image" content="{{ asset('media/me.jpg') }}">
+    <meta property="og:description" content="{{ $post->summary }}">
+    <meta property="og:site_name" content="Dieter Stinglhamber">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:author" content="Dieter Stinglhamber">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@elhebert">
+    <meta name="twitter:creator" content="@elhebert">
+    <meta name="twitter:url" content="https://dieterstinglhamber.me/{{ $post->slug }}">
+    <meta name="twitter:title" content="{{ $post->title }}">
+    <meta name="twitter:description" content="{{ $post->summary }}">
+    <meta name="twitter:image" content="{{ asset('media/me.jpg') }}">
 @endsection
 
 @section('content')
