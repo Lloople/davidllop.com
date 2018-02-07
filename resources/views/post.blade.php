@@ -20,7 +20,7 @@
                 default-src 'none';
                 style-src 'self' https://fonts.googleapis.com;
                 font-src https://fonts.gstatic.com data:;
-                script-src 'sha256-AYNJOvmbj6Gny6hzhcy5B7TuB6jucnb9unR858g9M9U=' https://www.googletagmanager.com https://www.google-analytics.com;
+                script-src 'self' 'sha256-AYNJOvmbj6Gny6hzhcy5B7TuB6jucnb9unR858g9M9U=' https://www.googletagmanager.com https://www.google-analytics.com;
                 img-src 'self' https://www.google-analytics.com;"
         >
     @endif

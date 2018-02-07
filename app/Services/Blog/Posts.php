@@ -46,7 +46,7 @@ class Posts
                     'slug' => $slug,
                     'title' => $object->title,
                     'date' => Carbon::createFromFormat('Y-m-d', $date),
-                    'summary' => (new CommonMarkConverter())->convertToHtml($object->summary ?? substr($object->body(), 0, 125)),
+                    'summary' => $object->summary,
                     'content' => (new CommonMarkConverter())->convertToHtml($object->body()),
                 ];
             })
