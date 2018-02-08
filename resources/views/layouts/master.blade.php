@@ -33,6 +33,8 @@
     @if (app()->env === 'production')
         <base href="https://dieterstinglhamber.me">
         <link rel="index" href="https://dieterstinglhamber.me">
+
+        @include('feed::links')
     @endif
 
     @yield('meta')

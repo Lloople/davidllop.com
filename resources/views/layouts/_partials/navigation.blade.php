@@ -6,6 +6,9 @@
         </a>
     </span>
     @endif
+    <a href="{{ route('feeds.main') }}" class="text-orange-light no-underline mr-1 hover:text-orange">
+        @svg('rss')
+    </a>
     <a href="https://twitter.com/elhebert" class="text-blue-light no-underline mr-1 hover:text-blue">
         @svg('twitter')
     </a>
