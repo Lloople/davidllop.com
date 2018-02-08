@@ -4,16 +4,7 @@
     <meta name="subject" content="Personal website">
     <meta name="description" content="I'm a 25 years old nerd, passionate by web development, RPG's, fantasy books, Belgian beers and computers.">
 
-    <meta name="rating" content="General">
-    <meta name="referrer" content="no-referrer">
-
-    <link rel="me" href="https://dieterstinglhamber.me" type="text/html">
-    <link rel="me" href="mailto:dieter.stinglhamber@gmail.com">
-
     @if (app()->env === 'production')
-        <base href="https://dieterstinglhamber.me">
-        <link rel="index" href="https://dieterstinglhamber.me">
-
         <meta
             http-equiv="Content-Security-Policy"
             content="
@@ -26,14 +17,8 @@
         >
     @endif
 
-    <meta name="robots" content="index,follow,noodp">
-    <meta name="googlebot" content="index,follow">
-
-    <meta name="google" content="nositelinkssearchbox">
-    <meta name="google" content="notranslate">
-
     <meta property="og:url" content="https://dieterstinglhamber.me/">
-    <meta property="og:type" content="website">
+
     <meta property="og:title" content="Dieter Stinglhamber">
     <meta property="og:image" content="{{ asset('media/me.jpg') }}">
     <meta property="og:description" content="I'm a 25 years old nerd, passionate by web development, RPG's, fantasy books, Belgian beers and computers.">
