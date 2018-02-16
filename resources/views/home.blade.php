@@ -36,7 +36,7 @@
 @endsection
 
 @section('content')
-<div class="flex w-screen h-screen relative flex-row">
+<div class="flex w-screen lg:h-screen relative flex-row">
     <div class="relative overflow-hidden w-1/2 lg:flex justify-center hidden">
         <div class="a-very-handsome-fellow h-full w-full">
         </div>
@@ -52,14 +52,8 @@
             </p>
         </div>
 
-        @if (count($recentPosts) > 0)
-            <div>
-                @each('_partials.cardPost', $recentPosts, 'post')
-            </div>
-        @endif
-
         @if(count($posts) > 0)
-            <div class="text-center">
+            <div class="text-center lg:block hidden">
                 Scroll down to see more
             </div>
         @endif
@@ -67,9 +61,15 @@
 </div>
 
 @if(count($posts) > 0)
-    <div class="w-full min-h-screen lg:w-1/2 mx-auto p-8">
+    <div class="w-full min-h-screen lg:w-3/4 mx-auto p-8">
 
         <h2 class="my-8 block font-indie-flower text-4xl">Recent writings...</h2>
+
+        @if (count($recentPosts) > 0)
+            <div>
+                @each('_partials.cardPost', $recentPosts, 'post')
+            </div>
+        @endif
 
         @each('_partials.cardPost', $posts, 'post')
     </div>
