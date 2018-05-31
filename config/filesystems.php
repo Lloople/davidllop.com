@@ -45,12 +45,7 @@ return [
 
         'posts' => [
             'driver' => 'local',
-            'root' => base_path('app/Services/Blog/files'),
-        ],
-
-        'assets' => [
-            'driver' => 'local',
-            'root' => base_path('public'),
+            'root' => base_path('posts'),
         ],
 
         'local' => [

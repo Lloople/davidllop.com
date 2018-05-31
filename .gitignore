@@ -3,7 +3,7 @@
 /node_modules
 
 /public/*
-!/public/media
+/public/media
 !/public/index.php
 !/public/favicon.ico
 !/public/robots.txt

@@ -2,20 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\Blog\Posts;
-use Illuminate\Support\Facades\View;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
+use Illuminate\View\View;
+use Spatie\Sheets\Sheets;
 
 class HomeController
 {
-    public function index(Posts $posts): \Illuminate\View\View
+    public function index(Sheets $sheets): View
     {
-        $recentPosts = $posts->all();
-        $allPosts = $recentPosts->splice(2);
+        $posts = $sheets->all()->sortByDesc('date');
 
-        $view = View::make('home');
-        $view = $view->with('posts', $allPosts);
-        $view = $view->with('recentPosts', $recentPosts);
+        $paginatedPosts = new LengthAwarePaginator(
+            $posts->forPage(Paginator::resolveCurrentPage(), 3),
+            $posts->count(),
+            3,
+            Paginator::resolveCurrentPage(),
+            ['path' => Paginator::resolveCurrentPath()]
+        );
 
-        return $view;
+        return view('home')
+            ->with('posts', $paginatedPosts);
     }
 }

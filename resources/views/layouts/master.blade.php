@@ -1,56 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ app()->getLocale() }}">
-<head>
-    @if (app()->env === 'production')
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('analytics.id') }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        gtag('config', '{{ config('analytics.id') }}');
-    </script>
-    @endif
+        <link rel="me" href="https://dieterstinglhamber.me" type="text/html">
+        <link rel="me" href="mailto:dieter.stinglhamber@gmail.com">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index,follow,noodp">
+        <meta name="googlebot" content="index,follow">
 
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="google" content="notranslate">
 
-    <link rel="me" href="https://dieterstinglhamber.me" type="text/html">
-    <link rel="me" href="mailto:dieter.stinglhamber@gmail.com">
+        <meta name="rating" content="General">
+        <meta name="referrer" content="no-referrer">
 
-    <meta name="robots" content="index,follow,noodp">
-    <meta name="googlebot" content="index,follow">
+        @if (app()->env === 'production')
+            <base href="https://dieterstinglhamber.me">
+            <link rel="index" href="https://dieterstinglhamber.me">
 
-    <meta name="google" content="nositelinkssearchbox">
-    <meta name="google" content="notranslate">
+            @include('feed::links')
+        @endif
 
-    <meta name="rating" content="General">
-    <meta name="referrer" content="no-referrer">
+        @yield('meta')
 
-    @if (app()->env === 'production')
-        <base href="https://dieterstinglhamber.me">
-        <link rel="index" href="https://dieterstinglhamber.me">
+        <link rel="stylesheet" href="{{ mix('css/font.css') }}">
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <link rel="stylesheet" href="{{ mix('css/hljs.css') }}">
 
-        @include('feed::links')
-    @endif
-
-    @yield('meta')
-
-    <link rel="preconnect" href="https://fonts.gstatic.com/">
-
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link
-        href="{{ mix('css/app.css') }}"
-        rel="stylesheet"
-    >
-
-    <title>Dieter Stinglhamber</title>
-</head>
-<body class="font-sans">
-    @include('layouts._partials.navigation')
-    @yield('content')
-</body>
+        <script src="{{ mix('js/app.js') }}" defer></script>
+    </head>
+    <body class="font-serif">
+        @yield('content')
+    </body>
 </html>

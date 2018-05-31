@@ -1,0 +1,86 @@
+
+@tailwind preflight;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+.article-title:after {
+  content: ' ';
+
+  width: 75px;
+  height: 3px;
+  bottom: -2px;
+
+  @apply .absolute .pin-l .bg-blue-dark;
+}
+
+pre {
+  @apply .mt-8 .mb-8;
+}
+
+pre code {
+  @apply .text-base .leading-normal .font-mono .p-6 .block .bg-blue-light .border .border-blue-light .overflow-x-scroll;
+}
+
+p code {
+  @apply .text-base .leading-normal .font-mono .px-1 .bg-blue-light .border .border-blue-light .rounded-sm;
+}
+
+hr {
+  height: 2px;
+
+  @apply .bg-blue-light .w-1/4 .mx-auto .my-16;
+}
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+
+ * {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

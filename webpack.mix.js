@@ -1,6 +1,5 @@
-let mix = require('laravel-mix');
+let mix = require('laravel-mix')
 const tailwindcss = require('tailwindcss')
-const cssImport = require('postcss-import')
 
 require('laravel-mix-purgecss')
 
@@ -15,24 +14,26 @@ require('laravel-mix-purgecss')
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
+mix
+  .sass('resources/assets/sass/hljs.scss', 'public/css')
+  .sass('resources/assets/sass/font.scss', 'public/css')
+  .sass('resources/assets/sass/app.scss', 'public/css')
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss('./tailwind.js')]
+  })
 
 mix
-  .postCss('resources/assets/css/app.pcss', 'public/css', [
-    cssImport(),
-    tailwindcss('./tailwind.js')
-  ])
-  .version()
   .purgeCss()
 
 mix
+  .js('resources/assets/js/app.js', 'public/js')
+
+mix
+  .copyDirectory('resources/assets/images', 'public/media')
+  .copyDirectory('resources/assets/fonts', 'public/fonts')
+
+mix
   .browserSync({
-    proxy: {
-      target: 'localhost:8000',
-      reqHeaders: function () {
-        return {
-          host: 'localhost:3000'
-        };
-      }
-    }
+    proxy: '127.0.0.1:8000'
   })

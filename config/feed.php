@@ -1,7 +1,10 @@
 <?php
 
-return [
+use Illuminate\Support\Carbon;
 
+$age = Carbon::now()->diffInYears(Carbon::parse('1992-10-26'));
+
+return [
     'feeds' => [
         'main' => [
             /*
@@ -12,13 +15,12 @@ return [
              * You can also pass an argument to that method:
              * ['App\Model@getAllFeedItems', 'argument']
              */
-            'items' => 'App\Http\Controllers\RssFeedController@index',
+            'items' => 'App\Models\Post@feed',
 
             // The feed will be available on this url.
             'url' => '/feed',
 
-            'title' => "Dieter Stinglhamber's feed",
+            'title' => "I am a {$age} years old nerd, passionate by web development, RPGs, fantasy books, Belgian beers and computers.",
         ],
     ],
-
 ];
