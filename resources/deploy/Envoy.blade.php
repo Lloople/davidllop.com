@@ -198,7 +198,7 @@ DEPLOY_REPOSITORY=
     php artisan cache:clear
     php artisan config:cache
 
-    ~/scripts/reload_php-fpm.sh
+    # ~/scripts/reload_php-fpm.sh
     php artisan queue:restart
 @endtask
 

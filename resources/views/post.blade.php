@@ -35,10 +35,23 @@
                 <span class="text-blue-dark text-lg font-semibold | block">
                     Written on <time>{{ $post->date->format('M d, Y') }}</time>
                 </span>
+
                 <h3 class="article-title | relative | text-blue-dark text-4xl font-bold | mb-12">
                     {{ $post->title }}
                 </h3>
+
                 {!! $post->contents !!}
+
+                <div class="text-sm | text-center">
+                    <hr class="bg-blue-light w-2/3 mx-auto mt-16 mb-6 h-2px">
+
+                    Spotted a mistake? Noticed something to improve? Feel free to
+                    <a
+                        class="text-blue-dark font-bold"
+                        href="https://github.com/Elhebert/dieterstinglhamber.me/blob/master/posts/{{ $post->date->format('Y-m-d') }}.{{ $post->slug }}.md">
+                        edit this post on GitHub.
+                    </a>
+                </div>
             </div>
         </main>
     </div>
