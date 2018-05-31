@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Markdown\Renderer;
+namespace App\Services\Sheets\Renderer;
 
 use League\CommonMark\ElementRendererInterface;
 use League\CommonMark\HtmlElement;
@@ -24,7 +24,7 @@ class LinkRenderer implements InlineRendererInterface, ConfigurationAwareInterfa
         }
 
         $attrs = [
-            'class' => 'text-blue-dark font-bold underline ',
+            'class' => 'text-blue-dark font-bold underline',
         ];
 
         foreach ($inline->getData('attributes', []) as $key => $value) {
