@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Cache;
 use Spatie\Sheets\Sheet;
 use Spatie\Sheets\Sheets;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Contracts\Support\Htmlable;
 
 class Post extends Sheet implements Htmlable
 {

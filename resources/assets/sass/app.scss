@@ -48,12 +48,6 @@ p code {
   @apply .text-base .leading-normal .font-mono .px-1 .bg-blue-light .border .border-blue-light .rounded-sm;
 }
 
-hr {
-  height: 2px;
-
-  @apply .bg-blue-light .w-1/4 .mx-auto .my-16;
-}
-
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.

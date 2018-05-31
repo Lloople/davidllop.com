@@ -61,7 +61,7 @@ return PhpCsFixer\Config::create()
         'not_operator_with_space' => false,
         'not_operator_with_successor_space' => false,
         'object_operator_without_whitespace' => true,
-        'ordered_imports' => ['sortAlgorithm' => 'alpha'],
+        'ordered_imports' => ['sortAlgorithm' => 'length'],
         'phpdoc_align' => ['tags' => ['param', 'return', 'throws', 'type', 'var']],
         'phpdoc_annotation_without_dot' => true,
         'phpdoc_indent' => true,

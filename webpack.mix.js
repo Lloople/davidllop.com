@@ -25,7 +25,9 @@ mix
 
 if (mix.inProduction()) {
   mix
-    .purgeCss()
+    .purgeCss({
+      whitelistPatterns: [/language/, /hljs/, /^pre/, /code$/],
+    })
     .version()
 }
 

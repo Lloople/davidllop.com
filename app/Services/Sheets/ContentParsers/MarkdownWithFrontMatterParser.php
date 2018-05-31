@@ -15,8 +15,10 @@ use League\CommonMark\Block\Element\Paragraph;
 use App\Services\Sheets\Renderer\ImageRenderer;
 use League\CommonMark\Block\Element\BlockQuote;
 use App\Services\Sheets\Renderer\HeadingRenderer;
+use League\CommonMark\Block\Element\ThematicBreak;
 use App\Services\Sheets\Renderer\ParagraphRenderer;
 use App\Services\Sheets\Renderer\BlockQuoteRenderer;
+use App\Services\Sheets\Renderer\ThematicBreakRenderer;
 
 class MarkdownWithFrontMatterParser implements ContentParser
 {
@@ -33,6 +35,7 @@ class MarkdownWithFrontMatterParser implements ContentParser
         $environment->addInlineRenderer(Link::class, new LinkRenderer());
         $environment->addInlineRenderer(Image::class, new ImageRenderer());
         $environment->addBlockRenderer(Paragraph::class, new ParagraphRenderer());
+        $environment->addBlockRenderer(ThematicBreak::class, new ThematicBreakRenderer());
         $environment->addBlockRenderer(Heading::class, new HeadingRenderer());
         $environment->addBlockRenderer(BlockQuote::class, new BlockQuoteRenderer());
 

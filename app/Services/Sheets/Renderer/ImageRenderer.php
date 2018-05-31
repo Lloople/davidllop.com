@@ -2,13 +2,13 @@
 
 namespace App\Services\Sheets\Renderer;
 
-use League\CommonMark\ElementRendererInterface;
-use League\CommonMark\HtmlElement;
-use League\CommonMark\Inline\Element\AbstractInline;
-use League\CommonMark\Inline\Element\Image;
-use League\CommonMark\Inline\Renderer\InlineRendererInterface;
 use League\CommonMark\Util\Xml;
+use League\CommonMark\HtmlElement;
 use Spatie\MediaLibrary\Models\Media;
+use League\CommonMark\Inline\Element\Image;
+use League\CommonMark\ElementRendererInterface;
+use League\CommonMark\Inline\Element\AbstractInline;
+use League\CommonMark\Inline\Renderer\InlineRendererInterface;
 
 class ImageRenderer implements InlineRendererInterface
 {
