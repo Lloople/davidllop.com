@@ -8,7 +8,7 @@
                 Home
             </a>
         </li>
-        <li class="px-2 pr-16 xl:px-4 py-3">
+        <li class="px-2 pr-8 xl:pr-6 xl:pl-4 py-3">
             <a
                 href="{{ route('about') }}"
                 class="text-blue{{ request()->routeIs('about') ? '-dark font-bold underline' : ' no-underline' }}"
