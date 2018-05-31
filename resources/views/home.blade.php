@@ -25,7 +25,7 @@
 @section('content')
     @include('_partials.nav')
 
-    <div class="flex flex-col xl:flex-row h-screen w-full| bg-blue-light">
+    <div class="xl:flex xl:flex-row xl:h-screen w-full| bg-blue-light">
         <div class="w-full xl:w-1/2 xl:px-24 py-8 xl:py-12">
             @include('_partials.sidebar')
         </div>
