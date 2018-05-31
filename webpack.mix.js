@@ -23,8 +23,11 @@ mix
     postCss: [tailwindcss('./tailwind.js')]
   })
 
-mix
-  .purgeCss()
+if (mix.inProduction()) {
+  mix
+    .purgeCss()
+    .version()
+}
 
 mix
   .js('resources/assets/js/app.js', 'public/js')
