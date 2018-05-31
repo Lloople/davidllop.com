@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('meta')
+    <title>About - Dieter Stinglhamber</title>
     <meta name="description" content="I'm a {{ $age }} years old nerd, passionate by web development, RPG's, fantasy books, Belgian beers and computers.">
 
     <meta property="og:url" content="https://dieterstinglhamber.me/about">

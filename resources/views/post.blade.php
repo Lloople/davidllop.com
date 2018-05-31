@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('meta')
+    <title>{{ $post->title }} - Dieter Stinglhamber</title>
     <meta name="description" content="{{ $post->summary }}">
 
     <meta property="og:url" content="{{ route('post', [$post->slug]) }}">
