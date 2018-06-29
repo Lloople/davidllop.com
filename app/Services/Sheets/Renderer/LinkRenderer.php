@@ -2,37 +2,36 @@
 
 namespace App\Services\Sheets\Renderer;
 
-use League\CommonMark\Util\Xml;
-use League\CommonMark\HtmlElement;
-use League\CommonMark\Util\RegexHelper;
-use League\CommonMark\Util\Configuration;
-use League\CommonMark\Inline\Element\Link;
 use League\CommonMark\ElementRendererInterface;
+use League\CommonMark\HtmlElement;
 use League\CommonMark\Inline\Element\AbstractInline;
-use League\CommonMark\Util\ConfigurationAwareInterface;
+use League\CommonMark\Inline\Element\Link;
 use League\CommonMark\Inline\Renderer\InlineRendererInterface;
+use League\CommonMark\Util\Configuration;
+use League\CommonMark\Util\ConfigurationAwareInterface;
+use League\CommonMark\Util\RegexHelper;
+use League\CommonMark\Util\Xml;
 
 class LinkRenderer implements InlineRendererInterface, ConfigurationAwareInterface
 {
+
     /** @var Configuration */
     protected $config;
 
     public function render(AbstractInline $inline, ElementRendererInterface $htmlRenderer)
     {
-        if (!($inline instanceof Link)) {
+        if (! ($inline instanceof Link)) {
             throw new \InvalidArgumentException('Incompatible inline type: ' . get_class($inline));
         }
 
-        $attrs = [
-            'class' => 'text-blue-dark font-bold underline',
-        ];
+        $attrs = [];
 
         foreach ($inline->getData('attributes', []) as $key => $value) {
             $attrs[$key] = Xml::escape($value, true);
         }
 
-        $forbidUnsafeLinks = $this->config->getConfig('safe') || !$this->config->getConfig('allow_unsafe_links');
-        if (!($forbidUnsafeLinks && RegexHelper::isLinkPotentiallyUnsafe($inline->getUrl()))) {
+        $forbidUnsafeLinks = $this->config->getConfig('safe') || ! $this->config->getConfig('allow_unsafe_links');
+        if (! ($forbidUnsafeLinks && RegexHelper::isLinkPotentiallyUnsafe($inline->getUrl()))) {
             $attrs['href'] = Xml::escape($inline->getUrl(), true);
         }
 

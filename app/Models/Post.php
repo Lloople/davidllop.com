@@ -31,7 +31,7 @@ class Post extends Sheet implements Htmlable
                     'updated' => $post->date,
                     'summary' => $post->summary,
                     'link' => route('post', [$post->slug]),
-                    'author' => 'Dieter Stinglhamber',
+                    'author' => config('info.name'),
                 ];
             });
     }

@@ -41,11 +41,19 @@ pre {
 }
 
 pre code {
-  @apply .text-base .leading-normal .font-mono .p-6 .block .bg-blue-light .border .border-blue-light .overflow-x-scroll;
+  @apply text-base leading-normal font-mono p-6 block bg-orange-lightest border border-orange-lightest overflow-x-scroll;
 }
 
 p code {
-  @apply .text-base .leading-normal .font-mono .px-1 .bg-blue-light .border .border-blue-light .rounded-sm;
+  @apply .text-base .leading-normal .font-mono .px-1 .bg-orange-lightest .border .border-orange-lightest .rounded-sm;
+}
+
+.about p {
+  @apply text-2xl;
+}
+
+a {
+  @apply text-orange-dark font-bold;
 }
 
 /**
