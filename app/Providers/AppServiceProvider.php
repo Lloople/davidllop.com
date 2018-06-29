@@ -2,8 +2,9 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\View;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,10 +14,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer('*', function ($view) {
-            $age = Carbon::now()->diffInYears(Carbon::parse('1992-10-26'));
-
-            return $view->with('age', $age);
+        Collection::macro('paginate', function ($perPage) {
+            return new LengthAwarePaginator(
+                $this->forPage(Paginator::resolveCurrentPage(), $perPage),
+                $this->count(),
+                $perPage,
+                Paginator::resolveCurrentPage(),
+                ['path' => Paginator::resolveCurrentPath()]
+            );
         });
     }
 
