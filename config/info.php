@@ -15,7 +15,7 @@ return [
     ],
     'description' => [
         'who' => 'I\'m a web developer using Laravel (PHP) and Vue.js. From Girona, Catalonia.',
-        'what' => 'I need to continue learning new stuff. I\'ve bought as many courses as my girlfriend has bought shoes.'
+        'what' => 'I need to continue learning new stuff. I\'ve watched more video courses than episodes on netflix.'
     ],
     'google_analytics' => env('GOOGLE_ANALYTICS', '')
 ];
