@@ -46,7 +46,7 @@
     
             <br>
             <span class="about-me-icon">🌐</span>
-            <p>I'm starting contributing to the Open Source Community. The code of this blog is my first contribution, followed by a few small packages focused to a Laravel application.</p>
+            <p>I'm starting contributing to the Open Source Community. I write a blog management system as my first contribution followed by a few small packages focused to a Laravel application. I'm also proud of a very small contributions into the Laravel framework itself.</p>
     
             <br>
             <span class="about-me-icon">📺</span>
