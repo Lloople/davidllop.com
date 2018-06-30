@@ -24,7 +24,7 @@
         </p>
         
         <p class="text-blue text-2xl | pb-8 | hidden xl:block">
-            I'm always asking <br><strong>how does this work?</strong>.
+            I'm always asking <br><strong>how does this work?</strong>
         </p>
     
         <p class="text-blue text-2xl | pb-8 | hidden xl:block">
