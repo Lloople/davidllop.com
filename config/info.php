@@ -9,13 +9,10 @@ return [
     'social' => [
         'twitter' => [
             'url' => 'https://twitter.com/lloople',
-            'username' => '@lloople'
-       ],
+            'username' => '@lloople',
+        ],
         'github' => 'https://github.com/Lloople',
     ],
-    'description' => [
-        'who' => 'I\'m a web developer using Laravel (PHP) and Vue.js. From Girona, Catalonia.',
-        'what' => 'I need to continue learning new stuff. I\'ve watched more video courses than episodes on netflix.'
-    ],
-    'google_analytics' => env('GOOGLE_ANALYTICS', '')
+    'description' => 'I\'m a web developer using Laravel (PHP) and Vue.js. From Girona, Catalonia.',
+    'google_analytics' => env('GOOGLE_ANALYTICS', ''),
 ];
