@@ -29,7 +29,7 @@
         @include('_partials.sidebar')
         
         <main class="xl:relative | w-full xl:w-3/4 xl:px-24 py-12 h-full | xl:overflow-auto | bg-white">
-            <div class="my-6 mx-24 | text-blue text-2xl">
+            <div class="my-6 mx-2 xl:mx-24 | text-blue text-2xl">
                 <span class="text-blue-dark text-lg font-semibold | block">
                     Written on <time>{{ $post->date->format('M d, Y') }}</time>
                 </span>

@@ -18,7 +18,7 @@ return [
             // The feed will be available on this url.
             'url' => '/feed',
 
-            'title' => "{$info['name']} - {$info['description']['who']}",
+            'title' => "{$info['name']} - {$info['description']}",
         ],
     ],
 ];

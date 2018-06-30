@@ -20,13 +20,9 @@
         @include('_partials.social')
     
         <p class="mt-8 text-blue text-2xl | pb-8 | hidden xl:block">
-            {{ config('info.description.who') }}
+            {{ config('info.description') }}
         </p>
-    
-        <p class="text-blue text-2xl | pb-8 | hidden xl:block">
-            {{ config('info.description.what') }}
-        </p>
-    
+        
         <p class="text-blue text-2xl | pb-8 | hidden xl:block">
             I'm always asking <br><strong>how does this work?</strong>.
         </p>
