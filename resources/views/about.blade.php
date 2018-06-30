@@ -55,7 +55,7 @@
             <br>
             <span class="about-me-icon">📚</span>
             <p>I read <strong>Artemis</strong> and <strong>The Martian</strong> by <a href="https://twitter.com/andyweirauthor">Andy Weir</a> which I consider a masterpiece.</p>
-            <p>I've also read <strong>Game of Thrones</strong>, all the stories about <strong>Sherlock Holmes</strong> (but I can't remember the half of them, time to re-read 😉)</p>
+            <p>I've also read <strong>Game of Thrones</strong> and all the stories about <strong>Sherlock Holmes</strong> (but I can't remember the half of them, time to re-read 😉)</p>
             <p>I'm planning to read <strong>The Man In The High Castle</strong>, since I enjoyed the TV show a lot. I'm a fan of <strong>The Name of The Wind</strong> by Patrick Rothfuss I read <strong>Harry Potter</strong> books a tons of times and enjoyed  <strong>Tales from Earthsea</strong> a lot.</p>
     
             <br>
