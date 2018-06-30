@@ -138,6 +138,7 @@ module.exports = {
       'sans-serif',
     ],
     'serif': [
+      'Kurale',
       'Josefin Slab',
       'serif',
     ],
