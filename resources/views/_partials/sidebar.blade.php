@@ -1,5 +1,5 @@
 <div class="w-full xl:w-1/4 px-12 py-12 bg-orange-light flex content-center justify-center flex-col">
-    <img src="http://davidllop.com/img/thumbnail.jpg"
+    <img src="/media/thumbnail.jpg"
          style="max-width: 200px; border-radius: 50%; text-alig: center; margin: 0 auto;"
          alt="{{ config('info.name') }}"
          class="handsome-guy hidden xl:block"
