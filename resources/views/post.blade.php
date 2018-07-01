@@ -41,7 +41,6 @@
                 {!! $post->contents !!}
                 
                 <div class="text-sm | text-center">
-                    <hr class="bg-blue-light w-2/3 mx-auto mt-16 mb-6 h-2px">
                     <p>
                         Spotted a mistake? Noticed something to improve? Feel free to
                         <a
@@ -49,6 +48,10 @@
                                 href="https://github.com/Lloople/davidllop.com/blob/master/posts/{{ $post->date->format('Y-m-d') }}.{{ $post->slug }}.md">
                             edit this post on GitHub.
                         </a>
+                    </p>
+                    <br>
+                    <p>
+                        Special thanks 🙏 to <a class="text-blue-dark fotn-bod" href="https://dieterstinglhamber.me">Dieter Stinglhamber</a> for the amazing code of this blog
                     </p>
                 </div>
             </div>
