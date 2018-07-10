@@ -39,6 +39,26 @@
                 </h3>
                 
                 {!! $post->contents !!}
+    
+                <ul class="flex justify-around | mb-12 | list-reset">
+                    <li class="px-1">
+                        @if ($previousPost)
+                            <a href="{{ route('post', [$previousPost->slug]) }}"
+                               class="text-sm text-orange no-underline">
+                                👈 {{ $previousPost->title }}
+                            </a>
+                        @endif
+                    </li>
+        
+                    <li class="px-1 text-right">
+                        @if ($nextPost)
+                            <a href="{{ route('post', [$nextPost->slug]) }}"
+                               class="text-sm text-orange no-underline text-right">
+                                {{ $nextPost->title }} 👉
+                            </a>
+                        @endif
+                    </li>
+                </ul>
                 
                 <div class="text-sm | text-center">
                     <p>
