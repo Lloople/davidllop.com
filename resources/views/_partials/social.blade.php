@@ -23,6 +23,7 @@
     <li class="mx-2">
         <a
             target="_blank"
+            rel="noopener"
             href="{{ config('info.social.github') }}"
             class="text-blue hover:text-blue-dark no-underline"
         >
@@ -44,6 +45,7 @@
     <li class="mx-2">
         <a
             target="_blank"
+            rel="noopener"
             href="{{ config('info.social.twitter.url') }}"
             class="text-blue hover:text-blue-dark no-underline"
         >
