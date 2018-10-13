@@ -8,8 +8,8 @@ return [
     'birth_date' => '1991-01-11',
     'social' => [
         'twitter' => [
-            'url' => 'https://twitter.com/lloople',
-            'username' => '@lloople',
+            'url' => 'https://twitter.com/Lloople',
+            'username' => '@Lloople',
         ],
         'github' => 'https://github.com/Lloople',
     ],
