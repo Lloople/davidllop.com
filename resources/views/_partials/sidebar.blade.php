@@ -9,15 +9,11 @@
     
     <div class="text-center | mt-2 mb-4 xl:mb-8">
         <a class="no-underline" href="{{ route('home') }}">
-            <h1
-                    class="text-blue-dark font-bold text-4xl"
-            >
+            <h1 class="text-blue-dark font-bold text-4xl">
                 {{ config('info.name') }}
             </h1>
         </a>
-        <h2
-                class="text-blue-dark font-normal text-3xl"
-        >
+        <h2 class="text-blue-dark font-normal text-3xl">
             {{ config('info.job_position') }}
         </h2>
         
