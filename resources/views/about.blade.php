@@ -49,6 +49,9 @@
             <p>I'm starting contributing to the Open Source Community. I write a blog management system as my first contribution followed by a few small packages focused to a Laravel application. I'm also proud of a very small contributions into the Laravel framework itself.</p>
     
             <br>
+            <span class="about-me-icon">🤖</span>
+            <p>I discovered the world of chatbots a while ago and I'm building them with <a href="https://botman.io">botman.io</a>. I already have a <a href="https://github.com/Lloople?utf8=✓&tab=repositories&q=bot-&type=&language=php">few projects on my GitHub</a>. I think it's a topic with a lot of potential for both private and commercial use. </p>
+            <br>
             <span class="about-me-icon">📺</span>
             <p>I'm following <strong>Game of Thrones</strong> (like everyone else), but also <strong>The Man in The High Castle</strong>, <strong>Startup</strong> and <strong>Electric Dreams</strong> from Prime Video.</p>
     
@@ -60,7 +63,14 @@
     
             <br>
             <span class="about-me-icon">🕒</span>
-            <p>I'm still searching a project to try <a href="https://laravel.com/docs/5.5/horizon">Laravel Horizon</a> but no luck for me 😅</p>
+            <p>I'm still searching a project to try this tools:</p>
+            <ul>
+                <li><a href="https://laravel.com/docs/5.7/horizon">Laravel Horizon</a></li>
+                <li><a href="https://nova.laravel.com">Laravel Nova</a></li>
+                <li><a href="https://larecipe.binarytorch.com.my/docs/1.2/overview">LaRecipe</a></li>
+                <li><a href="https://vuepress.vuejs.org">VuePress</a></li>
+                <li><a href="https://sailsjs.com">Sails Framework</a></li>
+            </ul>
             
         </div>
     </div>
