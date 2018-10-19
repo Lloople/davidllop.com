@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "fc66df17c107f18a08b38b9348fa4af8",
@@ -3085,25 +3085,25 @@
         },
         {
             "name": "spatie/laravel-feed",
-            "version": "2.0.2",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-feed.git",
-                "reference": "9f8d2adca406a1c050014aedf2203875c49bd248"
+                "reference": "ee9aab3b33553e0f621ccd9c0cbc2016a5be73e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-feed/zipball/9f8d2adca406a1c050014aedf2203875c49bd248",
-                "reference": "9f8d2adca406a1c050014aedf2203875c49bd248",
+                "url": "https://api.github.com/repos/spatie/laravel-feed/zipball/ee9aab3b33553e0f621ccd9c0cbc2016a5be73e5",
+                "reference": "ee9aab3b33553e0f621ccd9c0cbc2016a5be73e5",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "~5.5.0|~5.6.0",
+                "laravel/framework": "~5.5.0|~5.6.0|~5.7.0",
                 "nesbot/carbon": "^1.0",
                 "php": "^7.0"
             },
             "require-dev": {
-                "orchestra/testbench": "~3.5.0|~3.6.0",
+                "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0",
                 "phpunit/phpunit": "^6.0|^7.0",
                 "spatie/phpunit-snapshot-assertions": "^1.0"
             },
@@ -3152,7 +3152,7 @@
                 "rss",
                 "spatie"
             ],
-            "time": "2018-02-08T10:22:33+00:00"
+            "time": "2018-08-27T15:07:12+00:00"
         },
         {
             "name": "spatie/laravel-missing-page-redirector",

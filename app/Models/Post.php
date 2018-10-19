@@ -30,6 +30,7 @@ class Post extends Sheet implements Htmlable
                     'title' => $post->title,
                     'updated' => $post->date,
                     'summary' => $post->summary,
+                    'content' => $post->contents,
                     'link' => route('post', [$post->slug]),
                     'author' => config('info.name'),
                 ];

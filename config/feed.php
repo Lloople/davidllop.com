@@ -19,6 +19,8 @@ return [
             'url' => '/feed',
 
             'title' => "{$info['name']} - {$info['description']}",
+
+            'view' => 'feed',
         ],
     ],
 ];
