@@ -1,4 +1,4 @@
-<div class="w-full xl:w-1/4 px-12 py-12 bg-orange-light flex content-center justify-center flex-col">
+<div class="w-full xl:w-1/4 px-12 py-12 bg-orange-lighter flex content-center justify-center flex-col">
     <a href="{{ route('home') }}">
         <img src="/media/me.jpg"
              style="max-width: 200px; border-radius: 50%; text-alig: center; margin: 0 auto;"

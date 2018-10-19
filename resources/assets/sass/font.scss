@@ -35,8 +35,15 @@
 }
 
 @font-face {
-  font-family: 'Kurale';
-  src: url('../fonts/Kurale-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'MontserratAlternates';
+  src: url('../fonts/MontserratAlternates-Light.ttf') format('truetype');
+  font-weight: 200;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratAlternates';
+  src: url('../fonts/MontserratAlternates-LightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
 }
