@@ -19,15 +19,15 @@ pre {
 }
 
 pre code {
-  @apply text-base leading-normal font-mono p-6 block bg-orange-lightest border border-orange-lightest overflow-x-scroll;
+  @apply text-base leading-normal font-mono p-6 block bg-orange-lighter border border-orange-lighter overflow-x-scroll;
 }
 
 p code, li code {
-  @apply .text-base .leading-normal .font-mono .px-1 .bg-orange-lightest .border .border-orange-lightest .rounded-sm;
+  @apply .text-base .leading-normal .font-mono .px-1 .bg-orange-lighter .border .border-orange-lighter .rounded-sm;
 }
 
 .about p {
-  @apply text-2xl;
+  @apply text-xl;
 }
 
 a {

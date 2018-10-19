@@ -3,11 +3,11 @@
         Written on <time>{{ $post->date->format('M d, Y') }}</time>
     </span>
     <a href="{{ route('post', [$post->slug]) }}" class="no-underline">
-        <h3 class="article-title | relative | text-blue-dark text-3xl xl:text-4xl font-bold | mb-6">
+        <h3 class="article-title | relative | text-blue-dark text-2xl xl:text-3xl font-bold | mb-6">
             {{ $post->title }}
         </h3>
     </a>
-    <p class="text-blue text-2xl">
+    <p class="text-blue text-xl">
         {{ $post->summary }}
     </p>
 </div>

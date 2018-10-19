@@ -54,7 +54,7 @@ let colors = {
     'orange-dark': '#de751f',
     'orange': '#f6993f',
     'orange-light': '#faad63',
-    'orange-lighter': '#fcd9b6',
+    'orange-lighter': '#ffdab6',
     'orange-lightest': '#fff5eb',
   'white': '#ffffff'
 }
@@ -138,7 +138,7 @@ module.exports = {
       'sans-serif',
     ],
     'serif': [
-      'Kurale',
+      'MontserratAlternates',
       'Josefin Slab',
       'serif',
     ],
