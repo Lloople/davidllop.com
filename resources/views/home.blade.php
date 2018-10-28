@@ -23,24 +23,13 @@
 @endsection
 
 @section('content')
-    @include('_partials.nav')
-    
-    <div class="xl:flex xl:flex-row xl:h-screen w-full bg-orange-light">
-        
-        @include('_partials.sidebar')
-        
-        <main class="xl:relative | w-full xl:w-3/4 xl:px-24 py-12 h-full | xl:overflow-auto | bg-white">
-            
-            <div class="flex-grow | flex flex-col justify-center">
-                <div class="my-6 mx-2 xl:mx-24">
-                    @foreach($posts as $post)
-                        {{ $post }}
-                    @endforeach
-                </div>
-            </div>
-            
-            @include('_partials.pagination', ['elements' => $posts])
-            
-        </main>
+    <div class="flex-grow | flex flex-col justify-center">
+        <div class="my-6 mx-2 xl:mx-24">
+            @foreach($posts as $post)
+                {{ $post }}
+            @endforeach
+        </div>
     </div>
+    
+    @include('_partials.pagination', ['elements' => $posts])
 @endsection
