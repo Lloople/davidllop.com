@@ -7,6 +7,7 @@ use Spatie\Sheets\Sheets;
 
 class PostsController
 {
+
     public function show(string $slug, Sheets $sheets): View
     {
         $posts = $sheets->all()->sortByDesc('date');
@@ -15,13 +16,22 @@ class PostsController
             return $post->slug === $slug;
         });
 
-        if ($postKey === false) {
-            abort(404);
-        }
+        abort_if($postKey === false, 404);
+
+        $post = $posts->get($postKey);
+
+        $otherPosts = isset($post->category)
+            ? $posts->filter(function ($otherPost) use ($post) {
+                return isset($otherPost->category)
+                    && $otherPost->category === $post->category
+                    && $otherPost !== $post;
+            })
+            : [];
 
         return view('post')
-            ->with('post', $posts->get($postKey))
-            ->with('previousPost', $posts->get($postKey+1))
-            ->with('nextPost', $posts->get($postKey-1));
+            ->with('post', $post)
+            ->with('previousPost', $posts->get($postKey + 1))
+            ->with('nextPost', $posts->get($postKey - 1))
+            ->with('otherPosts', $otherPosts);
     }
 }
