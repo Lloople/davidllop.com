@@ -24,9 +24,9 @@
 
 @section('content')
     <div class="my-6 mx-2 xl:mx-24 | text-blue text-xl">
-                <span class="text-blue-dark text-lg font-semibold | block">
-                    Written on <time>{{ $post->date->format('M d, Y') }}</time>
-                </span>
+        <span class="text-blue-dark text-lg font-semibold | block">
+            Written on <time>{{ $post->date->format('M d, Y') }}</time>
+        </span>
         
         <h3 class="article-title | relative | text-blue-dark text-4xl font-bold | mb-12">
             {{ $post->title }}
@@ -34,10 +34,21 @@
         
         {!! $post->contents !!}
         
+        @if (count($otherPosts))
+            <p>You may also like:</p>
+            <ul class="mb-12">
+                @foreach ($otherPosts as $otherPost)
+                    <li>
+                        <a class="text-sm text-orange no-underline" href="{{ route('post', $otherPost->slug) }}">{{ $otherPost->title }}</a>
+                    </li>
+                @endforeach
+            </ul>
+        @endif
+        
         <ul class="flex justify-around | mb-12 | list-reset">
             <li class="px-1">
                 @if ($previousPost)
-                    <a href="{{ route('post', [$previousPost->slug]) }}"
+                    <a href="{{ route('post', $previousPost->slug) }}"
                        class="text-sm text-orange no-underline">
                         👈 {{ $previousPost->title }}
                     </a>
@@ -46,7 +57,7 @@
             
             <li class="px-1 text-right">
                 @if ($nextPost)
-                    <a href="{{ route('post', [$nextPost->slug]) }}"
+                    <a href="{{ route('post', $nextPost->slug) }}"
                        class="text-sm text-orange no-underline text-right">
                         {{ $nextPost->title }} 👉
                     </a>
