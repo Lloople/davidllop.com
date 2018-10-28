@@ -21,7 +21,7 @@
             <link rel="index" href="{{ url('') }}">
 
             @include('feed::links')
-        
+
             @if(config('info.google_analytics') !== '')
             <!-- Global site tag (gtag.js) - Google Analytics -->
                 <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('info.google_analytics') }}"></script>
@@ -40,12 +40,23 @@
         <link rel="stylesheet" href="{{ mix('css/font.css') }}">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <link rel="stylesheet" href="{{ mix('css/hljs.css') }}">
-        
+
         @yield('styles')
 
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body class="font-serif">
-        @yield('content')
+        @include('_partials.nav')
+        
+        <div class="xl:flex xl:flex-row xl:h-screen w-full bg-orange-light">
+            
+            @include('_partials.sidebar')
+            
+            <main class="xl:relative | w-full xl:w-3/4 xl:px-24 py-12 h-full | xl:overflow-auto | bg-white">
+                
+                @yield('content')
+                
+            </main>
+        </div>
     </body>
 </html>
