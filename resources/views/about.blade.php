@@ -100,10 +100,10 @@
             <div class="about-me-section">
                 <br>
                 <span class="about-me-icon">🏋️</span>
-                <p>I'm subscribed to a gym near work since October 2018. I'm going every single day on the morning
+                <p>I'm subscribed to a gym near work since October 2018. I'm going every single day in the morning
                     (unless I'm traveling or something big happened). That's
                     about {{ now()->diffInDays(date('2018-10-01')) }} days!</p>
-                <p>I'm starting to feel great with myself and it's helping me with my back pain and mental health.</p>
+                <p>I'm starting to feel great with myself and it's helping me with my back pain and mental health. In my opinion I think it's very important for all of us to do some exercise. Specially in our profession in which we spend almost 12 hours a day sitting down.</p>
                 <div class="about-me-section">
                     <br>
                     <span class="about-me-icon">🕒</span>
