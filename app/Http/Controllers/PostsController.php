@@ -22,7 +22,8 @@ class PostsController
 
         $otherPosts = isset($post->category)
             ? $posts->filter(function ($otherPost) use ($post) {
-                return isset($otherPost->category)
+                return $otherPost->published
+                    && isset($otherPost->category)
                     && $otherPost->category === $post->category
                     && $otherPost !== $post;
             })
