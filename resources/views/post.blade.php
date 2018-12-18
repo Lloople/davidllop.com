@@ -23,12 +23,12 @@
 @endsection
 
 @section('content')
-    <div class="my-6 mx-2 xl:mx-24 | text-blue text-xl">
-        <span class="text-blue-dark text-lg font-semibold | block">
+    <div class="my-6 mx-2 xl:mx-24 | text-purple-lighter font-dos">
+        <span class="text-purple-light font-semibold font-amiga | block">
             Written on <time>{{ $post->date->format('M d, Y') }}</time>
         </span>
         
-        <h3 class="article-title | relative | text-blue-dark text-4xl font-bold | mb-12">
+        <h3 class="article-title | relative | text-pink uppercase text-2xl font-bold font-amiga | mb-12">
             {{ $post->title }}
         </h3>
         
@@ -39,7 +39,7 @@
             <ul class="mb-12">
                 @foreach ($otherPosts as $otherPost)
                     <li>
-                        <a class="text-sm text-orange no-underline" href="{{ route('post', $otherPost->slug) }}">{{ $otherPost->title }}</a>
+                        <a class="text-sm text-purple-lighter no-underline" href="{{ route('post', $otherPost->slug) }}">{{ $otherPost->title }}</a>
                     </li>
                 @endforeach
             </ul>
@@ -49,8 +49,8 @@
             <li class="px-1">
                 @if ($previousPost)
                     <a href="{{ route('post', $previousPost->slug) }}"
-                       class="text-sm text-orange no-underline">
-                        👈 {{ $previousPost->title }}
+                       class="text-sm text-green no-underline">
+                        << {{ $previousPost->title }}
                     </a>
                 @endif
             </li>
@@ -58,8 +58,8 @@
             <li class="px-1 text-right">
                 @if ($nextPost)
                     <a href="{{ route('post', $nextPost->slug) }}"
-                       class="text-sm text-orange no-underline text-right">
-                        {{ $nextPost->title }} 👉
+                       class="text-sm text-green no-underline text-right">
+                        {{ $nextPost->title }} >>
                     </a>
                 @endif
             </li>
@@ -69,14 +69,14 @@
             <p>
                 Spotted a mistake? Noticed something to improve? Feel free to
                 <a
-                        class="text-blue-dark font-bold"
+                        class="text-yellow font-bold"
                         href="https://github.com/Lloople/davidllop.com/blob/master/posts/{{ $post->date->format('Y-m-d') }}.{{ $post->slug }}.md">
                     edit this post on GitHub.
                 </a>
             </p>
             <br>
             <p>
-                Special thanks 🙏 to <a class="text-blue-dark fotn-bod" href="https://dieterstinglhamber.me">Dieter
+                Special thanks 🙏 to <a class="text-yellow font-bold" href="https://dieterstinglhamber.me">Dieter
                     Stinglhamber</a> for the amazing code of this blog
             </p>
         </div>

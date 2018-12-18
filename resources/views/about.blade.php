@@ -25,10 +25,10 @@
 @section('content')
     @include('_partials.nav')
     
-    <div class="flex h-full w-full about flex-col">
+    <div class="flex h-full w-full about flex-col font-dos">
         <div class="max-w-xl mx-auto | px-8 xl:px-24 py-12 xl:py-12">
             <img src="{{ url('media/me.jpg') }}"
-                 class="rounded-b-full mx-auto text-center xl:float-right p-8 clearfix flex" width="200">
+                 class="mx-auto text-center xl:float-right p-8 clearfix flex" width="200">
             
             <div class="about-me-section">
                 

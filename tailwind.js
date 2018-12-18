@@ -46,8 +46,10 @@ View the full documentation at https://tailwindcss.com.
 let colors = {
   'transparent': 'transparent',
 
+  'green': '#41ff00',
+  'blue': '#0200af',
   'blue-dark': '#072540',
-  'blue': '#0b3b66',
+//  'blue': '#0b3b66',
   'blue-light': '#e1eefa',
     'orange-darkest': '#542605',
     'orange-darker': '#7f4012',
@@ -56,6 +58,30 @@ let colors = {
     'orange-light': '#faad63',
     'orange-lighter': '#ffdab6',
     'orange-lightest': '#fff5eb',
+  'indigo-darkest': '#191e38',
+  'indigo-darker': '#2f365f',
+  'indigo-dark': '#5661b3',
+  'indigo': '#6574cd',
+  'indigo-light': '#7886d7',
+  'indigo-lighter': '#b2b7ff',
+  'indigo-lightest': '#e6e8ff',
+
+  'purple-darkest': '#21183c',
+  'purple-darker': '#382b5f',
+  'purple-dark': '#794acf',
+  'purple': '#9561e2',
+  'purple-light': '#a779e9',
+  'purple-lighter': '#d6bbfc',
+  'purple-lightest': '#f3ebff',
+
+  'pink-darkest': '#451225',
+  'pink-darker': '#6f213f',
+  'pink-dark': '#eb5286',
+  'pink': '#f66d9b',
+  'pink-light': '#fa7ea8',
+  'pink-lighter': '#ffbbca',
+  'pink-lightest': '#ffebef',
+  'yellow': '#c6af30',
   'white': '#ffffff'
 }
 
@@ -123,6 +149,18 @@ module.exports = {
   */
 
   fonts: {
+    'outrun': [
+        'Blade Runner'
+    ],
+    'outrun-title': [
+      'Ash',
+    ],
+    'dos': [
+        'DOS'
+    ],
+    'amiga': [
+        'Amiga4Ever'
+    ],
     'sans': [
       'system-ui',
       'BlinkMacSystemFont',

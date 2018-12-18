@@ -1,1 +1,69 @@
-@font-face{font-family:Josefin Slab;src:url("../fonts/josefinslab-bold.woff2") format("woff2"),url("../fonts/josefinslab-bold.woff") format("woff"),url("../fonts/josefinslab-bold.ttf") format("truetype");font-weight:700;font-style:normal}@font-face{font-family:Josefin Slab;src:url("../fonts/josefinslab-bolditalic.woff2") format("woff2"),url("../fonts/josefinslab-bolditalic.woff") format("woff"),url("../fonts/josefinslab-bolditalic.ttf") format("truetype");font-weight:700;font-style:italic}@font-face{font-family:Josefin Slab;src:url("../fonts/josefinslab-italic.woff2") format("woff2"),url("../fonts/josefinslab-italic.woff") format("woff"),url("../fonts/josefinslab-italic.ttf") format("truetype");font-weight:400;font-style:italic}@font-face{font-family:Josefin Slab;src:url("../fonts/josefinslab-regular.woff2") format("woff2"),url("../fonts/josefinslab-regular.woff") format("woff"),url("../fonts/josefinslab-regular.ttf") format("truetype");font-weight:400;font-style:normal}@font-face{font-family:MontserratAlternates;src:url("../fonts/MontserratAlternates-Light.ttf") format("truetype");font-weight:200;font-style:normal}@font-face{font-family:MontserratAlternates;src:url("../fonts/MontserratAlternates-LightItalic.ttf") format("truetype");font-weight:200;font-style:italic}
+@font-face {
+  font-family: 'Blade Runner';
+  src: url("../fonts/blade_runner.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ash';
+  src: url("../fonts/ash.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DOS';
+  src: url("../fonts/dos.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amiga4Ever';
+  src: url("../fonts/amiga4ever.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url("../fonts/josefinslab-bold.woff2") format("woff2"), url("../fonts/josefinslab-bold.woff") format("woff"), url("../fonts/josefinslab-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url("../fonts/josefinslab-bolditalic.woff2") format("woff2"), url("../fonts/josefinslab-bolditalic.woff") format("woff"), url("../fonts/josefinslab-bolditalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url("../fonts/josefinslab-italic.woff2") format("woff2"), url("../fonts/josefinslab-italic.woff") format("woff"), url("../fonts/josefinslab-italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url("../fonts/josefinslab-regular.woff2") format("woff2"), url("../fonts/josefinslab-regular.woff") format("woff"), url("../fonts/josefinslab-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratAlternates';
+  src: url("../fonts/MontserratAlternates-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratAlternates';
+  src: url("../fonts/MontserratAlternates-LightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}

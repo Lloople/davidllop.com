@@ -2,7 +2,7 @@
     <li class="mx-2">
         <a
             href="/feed"
-            class="text-blue hover:text-blue-dark no-underline"
+            class="text-green hover:text-blue-dark no-underline"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@
             target="_blank"
             rel="noopener"
             href="{{ config('info.social.github') }}"
-            class="text-blue hover:text-blue-dark no-underline"
+            class="text-green hover:text-blue-dark no-underline"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@
             target="_blank"
             rel="noopener"
             href="{{ config('info.social.twitter.url') }}"
-            class="text-blue hover:text-blue-dark no-underline"
+            class="text-green hover:text-blue-dark no-underline"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
