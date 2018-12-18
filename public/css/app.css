@@ -1965,14 +1965,6 @@ a {
   clear: both;
 }
 
-.font-outrun {
-  font-family: Blade Runner;
-}
-
-.font-outrun-title {
-  font-family: Ash;
-}
-
 .font-dos {
   font-family: DOS;
 }
@@ -5495,14 +5487,6 @@ a {
     clear: both;
   }
 
-  .sm\:font-outrun {
-    font-family: Blade Runner;
-  }
-
-  .sm\:font-outrun-title {
-    font-family: Ash;
-  }
-
   .sm\:font-dos {
     font-family: DOS;
   }
@@ -8994,14 +8978,6 @@ a {
     content: "";
     display: table;
     clear: both;
-  }
-
-  .md\:font-outrun {
-    font-family: Blade Runner;
-  }
-
-  .md\:font-outrun-title {
-    font-family: Ash;
   }
 
   .md\:font-dos {
@@ -12497,14 +12473,6 @@ a {
     clear: both;
   }
 
-  .lg\:font-outrun {
-    font-family: Blade Runner;
-  }
-
-  .lg\:font-outrun-title {
-    font-family: Ash;
-  }
-
   .lg\:font-dos {
     font-family: DOS;
   }
@@ -15996,14 +15964,6 @@ a {
     content: "";
     display: table;
     clear: both;
-  }
-
-  .xl\:font-outrun {
-    font-family: Blade Runner;
-  }
-
-  .xl\:font-outrun-title {
-    font-family: Ash;
   }
 
   .xl\:font-dos {
