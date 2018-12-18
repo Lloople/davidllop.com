@@ -3,7 +3,7 @@
         <li class="px-2 xl:px-4 py-3">
             <a
                 href="{{ route('home') }}"
-                class="text-blue{{ request()->routeIs('home') ? '-dark font-bold underline' : ' no-underline' }}"
+                class="font-dos uppercase {{ request()->routeIs('home') ? 'text-green font-bold underline' : 'text-purple-lighter no-underline' }}"
             >
                 Home
             </a>
@@ -11,7 +11,7 @@
         <li class="px-2 pr-8 xl:pr-6 xl:pl-4 py-3">
             <a
                 href="{{ route('about') }}"
-                class="text-blue{{ request()->routeIs('about') ? '-dark font-bold underline' : ' no-underline' }}"
+                class="font-dos uppercase {{ request()->routeIs('about') ? 'text-green font-bold underline' : 'text-purple-lighter no-underline' }}"
             >
                 About
             </a>

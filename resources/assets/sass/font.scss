@@ -1,4 +1,32 @@
 @font-face {
+  font-family: 'Blade Runner';
+  src: url('../fonts/blade_runner.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ash';
+  src: url('../fonts/ash.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'DOS';
+    src: url('../fonts/dos.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amiga4Ever';
+    src: url('../fonts/amiga4ever.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Josefin Slab';
     src: url('../fonts/josefinslab-bold.woff2') format('woff2'),
          url('../fonts/josefinslab-bold.woff') format('woff'),
