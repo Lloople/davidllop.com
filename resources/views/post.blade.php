@@ -23,7 +23,7 @@
 @endsection
 
 @section('content')
-    <div class="my-6 mx-2 xl:mx-24 | text-purple-lighter font-dos">
+    <div class="mt-6 mx-2 xl:mx-24 | text-purple-lighter font-dos overflow-hidden">
         <span class="text-purple-light font-semibold font-amiga | block">
             Written on <time>{{ $post->date->format('M d, Y') }}</time>
         </span>
@@ -80,10 +80,8 @@
                     Stinglhamber</a> for the amazing code of this blog
             </p>
         </div>
+        @include('_partials.sorcerers')
+
     </div>
 
-    <div class="sorcerers">
-        <img style="float: right;" src="/media/simon-the-sorcerer.gif" alt="Doing some magic 🙄">
-        <img style="float: right;-webkit-transform: scaleX(-1);transform: scaleX(-1);" src="/media/simon-the-sorcerer-calypso.gif" alt="Be careful with that!">
-    </div>
 @endsection
