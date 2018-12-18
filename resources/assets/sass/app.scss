@@ -3,6 +3,10 @@
 
 @tailwind components;
 
+.article-title {
+  text-shadow: 3px 3px #5d298b;
+}
+
 pre {
   @apply .mt-8 .mb-8;
 }
@@ -20,7 +24,7 @@ p code, li code {
 }
 
 a {
-  @apply .text-yellow .font-bold;
+  @apply .text-pink .font-bold;
 }
 
 .bg-sidebar {

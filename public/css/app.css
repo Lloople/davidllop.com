@@ -662,6 +662,10 @@ button,
   }
 }
 
+.article-title {
+  text-shadow: 3px 3px #5d298b;
+}
+
 pre {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -701,7 +705,7 @@ li code {
 }
 
 a {
-  color: #c6af30;
+  color: #ff00db;
   font-weight: 700;
 }
 
@@ -862,7 +866,7 @@ a {
 }
 
 .bg-pink {
-  background-color: #f66d9b;
+  background-color: #ff00db;
 }
 
 .bg-pink-light {
@@ -878,7 +882,7 @@ a {
 }
 
 .bg-yellow {
-  background-color: #c6af30;
+  background-color: #fff200;
 }
 
 .bg-white {
@@ -1002,7 +1006,7 @@ a {
 }
 
 .hover\:bg-pink:hover {
-  background-color: #f66d9b;
+  background-color: #ff00db;
 }
 
 .hover\:bg-pink-light:hover {
@@ -1018,7 +1022,7 @@ a {
 }
 
 .hover\:bg-yellow:hover {
-  background-color: #c6af30;
+  background-color: #fff200;
 }
 
 .hover\:bg-white:hover {
@@ -1206,7 +1210,7 @@ a {
 }
 
 .border-pink {
-  border-color: #f66d9b;
+  border-color: #ff00db;
 }
 
 .border-pink-light {
@@ -1222,7 +1226,7 @@ a {
 }
 
 .border-yellow {
-  border-color: #c6af30;
+  border-color: #fff200;
 }
 
 .border-white {
@@ -1346,7 +1350,7 @@ a {
 }
 
 .hover\:border-pink:hover {
-  border-color: #f66d9b;
+  border-color: #ff00db;
 }
 
 .hover\:border-pink-light:hover {
@@ -1362,7 +1366,7 @@ a {
 }
 
 .hover\:border-yellow:hover {
-  border-color: #c6af30;
+  border-color: #fff200;
 }
 
 .hover\:border-white:hover {
@@ -3694,7 +3698,7 @@ a {
 }
 
 .text-pink {
-  color: #f66d9b;
+  color: #ff00db;
 }
 
 .text-pink-light {
@@ -3710,7 +3714,7 @@ a {
 }
 
 .text-yellow {
-  color: #c6af30;
+  color: #fff200;
 }
 
 .text-white {
@@ -3834,7 +3838,7 @@ a {
 }
 
 .hover\:text-pink:hover {
-  color: #f66d9b;
+  color: #ff00db;
 }
 
 .hover\:text-pink-light:hover {
@@ -3850,7 +3854,7 @@ a {
 }
 
 .hover\:text-yellow:hover {
-  color: #c6af30;
+  color: #fff200;
 }
 
 .hover\:text-white:hover {
@@ -4384,7 +4388,7 @@ a {
   }
 
   .sm\:bg-pink {
-    background-color: #f66d9b;
+    background-color: #ff00db;
   }
 
   .sm\:bg-pink-light {
@@ -4400,7 +4404,7 @@ a {
   }
 
   .sm\:bg-yellow {
-    background-color: #c6af30;
+    background-color: #fff200;
   }
 
   .sm\:bg-white {
@@ -4524,7 +4528,7 @@ a {
   }
 
   .sm\:hover\:bg-pink:hover {
-    background-color: #f66d9b;
+    background-color: #ff00db;
   }
 
   .sm\:hover\:bg-pink-light:hover {
@@ -4540,7 +4544,7 @@ a {
   }
 
   .sm\:hover\:bg-yellow:hover {
-    background-color: #c6af30;
+    background-color: #fff200;
   }
 
   .sm\:hover\:bg-white:hover {
@@ -4728,7 +4732,7 @@ a {
   }
 
   .sm\:border-pink {
-    border-color: #f66d9b;
+    border-color: #ff00db;
   }
 
   .sm\:border-pink-light {
@@ -4744,7 +4748,7 @@ a {
   }
 
   .sm\:border-yellow {
-    border-color: #c6af30;
+    border-color: #fff200;
   }
 
   .sm\:border-white {
@@ -4868,7 +4872,7 @@ a {
   }
 
   .sm\:hover\:border-pink:hover {
-    border-color: #f66d9b;
+    border-color: #ff00db;
   }
 
   .sm\:hover\:border-pink-light:hover {
@@ -4884,7 +4888,7 @@ a {
   }
 
   .sm\:hover\:border-yellow:hover {
-    border-color: #c6af30;
+    border-color: #fff200;
   }
 
   .sm\:hover\:border-white:hover {
@@ -7208,7 +7212,7 @@ a {
   }
 
   .sm\:text-pink {
-    color: #f66d9b;
+    color: #ff00db;
   }
 
   .sm\:text-pink-light {
@@ -7224,7 +7228,7 @@ a {
   }
 
   .sm\:text-yellow {
-    color: #c6af30;
+    color: #fff200;
   }
 
   .sm\:text-white {
@@ -7348,7 +7352,7 @@ a {
   }
 
   .sm\:hover\:text-pink:hover {
-    color: #f66d9b;
+    color: #ff00db;
   }
 
   .sm\:hover\:text-pink-light:hover {
@@ -7364,7 +7368,7 @@ a {
   }
 
   .sm\:hover\:text-yellow:hover {
-    color: #c6af30;
+    color: #fff200;
   }
 
   .sm\:hover\:text-white:hover {
@@ -7877,7 +7881,7 @@ a {
   }
 
   .md\:bg-pink {
-    background-color: #f66d9b;
+    background-color: #ff00db;
   }
 
   .md\:bg-pink-light {
@@ -7893,7 +7897,7 @@ a {
   }
 
   .md\:bg-yellow {
-    background-color: #c6af30;
+    background-color: #fff200;
   }
 
   .md\:bg-white {
@@ -8017,7 +8021,7 @@ a {
   }
 
   .md\:hover\:bg-pink:hover {
-    background-color: #f66d9b;
+    background-color: #ff00db;
   }
 
   .md\:hover\:bg-pink-light:hover {
@@ -8033,7 +8037,7 @@ a {
   }
 
   .md\:hover\:bg-yellow:hover {
-    background-color: #c6af30;
+    background-color: #fff200;
   }
 
   .md\:hover\:bg-white:hover {
@@ -8221,7 +8225,7 @@ a {
   }
 
   .md\:border-pink {
-    border-color: #f66d9b;
+    border-color: #ff00db;
   }
 
   .md\:border-pink-light {
@@ -8237,7 +8241,7 @@ a {
   }
 
   .md\:border-yellow {
-    border-color: #c6af30;
+    border-color: #fff200;
   }
 
   .md\:border-white {
@@ -8361,7 +8365,7 @@ a {
   }
 
   .md\:hover\:border-pink:hover {
-    border-color: #f66d9b;
+    border-color: #ff00db;
   }
 
   .md\:hover\:border-pink-light:hover {
@@ -8377,7 +8381,7 @@ a {
   }
 
   .md\:hover\:border-yellow:hover {
-    border-color: #c6af30;
+    border-color: #fff200;
   }
 
   .md\:hover\:border-white:hover {
@@ -10701,7 +10705,7 @@ a {
   }
 
   .md\:text-pink {
-    color: #f66d9b;
+    color: #ff00db;
   }
 
   .md\:text-pink-light {
@@ -10717,7 +10721,7 @@ a {
   }
 
   .md\:text-yellow {
-    color: #c6af30;
+    color: #fff200;
   }
 
   .md\:text-white {
@@ -10841,7 +10845,7 @@ a {
   }
 
   .md\:hover\:text-pink:hover {
-    color: #f66d9b;
+    color: #ff00db;
   }
 
   .md\:hover\:text-pink-light:hover {
@@ -10857,7 +10861,7 @@ a {
   }
 
   .md\:hover\:text-yellow:hover {
-    color: #c6af30;
+    color: #fff200;
   }
 
   .md\:hover\:text-white:hover {
@@ -11370,7 +11374,7 @@ a {
   }
 
   .lg\:bg-pink {
-    background-color: #f66d9b;
+    background-color: #ff00db;
   }
 
   .lg\:bg-pink-light {
@@ -11386,7 +11390,7 @@ a {
   }
 
   .lg\:bg-yellow {
-    background-color: #c6af30;
+    background-color: #fff200;
   }
 
   .lg\:bg-white {
@@ -11510,7 +11514,7 @@ a {
   }
 
   .lg\:hover\:bg-pink:hover {
-    background-color: #f66d9b;
+    background-color: #ff00db;
   }
 
   .lg\:hover\:bg-pink-light:hover {
@@ -11526,7 +11530,7 @@ a {
   }
 
   .lg\:hover\:bg-yellow:hover {
-    background-color: #c6af30;
+    background-color: #fff200;
   }
 
   .lg\:hover\:bg-white:hover {
@@ -11714,7 +11718,7 @@ a {
   }
 
   .lg\:border-pink {
-    border-color: #f66d9b;
+    border-color: #ff00db;
   }
 
   .lg\:border-pink-light {
@@ -11730,7 +11734,7 @@ a {
   }
 
   .lg\:border-yellow {
-    border-color: #c6af30;
+    border-color: #fff200;
   }
 
   .lg\:border-white {
@@ -11854,7 +11858,7 @@ a {
   }
 
   .lg\:hover\:border-pink:hover {
-    border-color: #f66d9b;
+    border-color: #ff00db;
   }
 
   .lg\:hover\:border-pink-light:hover {
@@ -11870,7 +11874,7 @@ a {
   }
 
   .lg\:hover\:border-yellow:hover {
-    border-color: #c6af30;
+    border-color: #fff200;
   }
 
   .lg\:hover\:border-white:hover {
@@ -14194,7 +14198,7 @@ a {
   }
 
   .lg\:text-pink {
-    color: #f66d9b;
+    color: #ff00db;
   }
 
   .lg\:text-pink-light {
@@ -14210,7 +14214,7 @@ a {
   }
 
   .lg\:text-yellow {
-    color: #c6af30;
+    color: #fff200;
   }
 
   .lg\:text-white {
@@ -14334,7 +14338,7 @@ a {
   }
 
   .lg\:hover\:text-pink:hover {
-    color: #f66d9b;
+    color: #ff00db;
   }
 
   .lg\:hover\:text-pink-light:hover {
@@ -14350,7 +14354,7 @@ a {
   }
 
   .lg\:hover\:text-yellow:hover {
-    color: #c6af30;
+    color: #fff200;
   }
 
   .lg\:hover\:text-white:hover {
@@ -14863,7 +14867,7 @@ a {
   }
 
   .xl\:bg-pink {
-    background-color: #f66d9b;
+    background-color: #ff00db;
   }
 
   .xl\:bg-pink-light {
@@ -14879,7 +14883,7 @@ a {
   }
 
   .xl\:bg-yellow {
-    background-color: #c6af30;
+    background-color: #fff200;
   }
 
   .xl\:bg-white {
@@ -15003,7 +15007,7 @@ a {
   }
 
   .xl\:hover\:bg-pink:hover {
-    background-color: #f66d9b;
+    background-color: #ff00db;
   }
 
   .xl\:hover\:bg-pink-light:hover {
@@ -15019,7 +15023,7 @@ a {
   }
 
   .xl\:hover\:bg-yellow:hover {
-    background-color: #c6af30;
+    background-color: #fff200;
   }
 
   .xl\:hover\:bg-white:hover {
@@ -15207,7 +15211,7 @@ a {
   }
 
   .xl\:border-pink {
-    border-color: #f66d9b;
+    border-color: #ff00db;
   }
 
   .xl\:border-pink-light {
@@ -15223,7 +15227,7 @@ a {
   }
 
   .xl\:border-yellow {
-    border-color: #c6af30;
+    border-color: #fff200;
   }
 
   .xl\:border-white {
@@ -15347,7 +15351,7 @@ a {
   }
 
   .xl\:hover\:border-pink:hover {
-    border-color: #f66d9b;
+    border-color: #ff00db;
   }
 
   .xl\:hover\:border-pink-light:hover {
@@ -15363,7 +15367,7 @@ a {
   }
 
   .xl\:hover\:border-yellow:hover {
-    border-color: #c6af30;
+    border-color: #fff200;
   }
 
   .xl\:hover\:border-white:hover {
@@ -17687,7 +17691,7 @@ a {
   }
 
   .xl\:text-pink {
-    color: #f66d9b;
+    color: #ff00db;
   }
 
   .xl\:text-pink-light {
@@ -17703,7 +17707,7 @@ a {
   }
 
   .xl\:text-yellow {
-    color: #c6af30;
+    color: #fff200;
   }
 
   .xl\:text-white {
@@ -17827,7 +17831,7 @@ a {
   }
 
   .xl\:hover\:text-pink:hover {
-    color: #f66d9b;
+    color: #ff00db;
   }
 
   .xl\:hover\:text-pink-light:hover {
@@ -17843,7 +17847,7 @@ a {
   }
 
   .xl\:hover\:text-yellow:hover {
-    color: #c6af30;
+    color: #fff200;
   }
 
   .xl\:hover\:text-white:hover {
