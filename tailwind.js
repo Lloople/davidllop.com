@@ -171,8 +171,6 @@ module.exports = {
       'sans-serif',
     ],
     'serif': [
-      'MontserratAlternates',
-      'Josefin Slab',
       'serif',
     ],
     'mono': [
