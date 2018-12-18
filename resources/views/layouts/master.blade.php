@@ -52,11 +52,12 @@
             
             @include('_partials.sidebar')
             
-            <main class="xl:relative | w-full xl:w-3/4 xl:px-24 py-12 h-full | xl:overflow-auto | bg-purple-darker">
+            <main class="xl:relative | w-full xl:w-3/4 xl:px-24 pt-12 h-full | xl:overflow-auto | bg-purple-darker">
                 
                 @yield('content')
-                
+
             </main>
+
         </div>
     </body>
 </html>

@@ -7,7 +7,7 @@
             > {{ $post->title }}
         </h3>
     </a>
-    <p class="text-purple-lighter font-amiga">
+    <p class="text-purple-lighter font-dos text-xl">
         {{ $post->summary }}
     </p>
 </div>

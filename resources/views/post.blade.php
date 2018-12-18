@@ -29,7 +29,7 @@
         </span>
         
         <h3 class="article-title | relative | text-pink uppercase text-2xl font-bold font-amiga | mb-12">
-            {{ $post->title }}
+            > {{ $post->title }}
         </h3>
         
         {!! $post->contents !!}
@@ -39,7 +39,7 @@
             <ul class="mb-12">
                 @foreach ($otherPosts as $otherPost)
                     <li>
-                        <a class="text-sm text-purple-lighter no-underline" href="{{ route('post', $otherPost->slug) }}">{{ $otherPost->title }}</a>
+                        <a class="text-sm text-green no-underline" href="{{ route('post', $otherPost->slug) }}">{{ $otherPost->title }}</a>
                     </li>
                 @endforeach
             </ul>
@@ -69,16 +69,21 @@
             <p>
                 Spotted a mistake? Noticed something to improve? Feel free to
                 <a
-                        class="text-yellow font-bold"
+                        class="text-pink font-bold"
                         href="https://github.com/Lloople/davidllop.com/blob/master/posts/{{ $post->date->format('Y-m-d') }}.{{ $post->slug }}.md">
                     edit this post on GitHub.
                 </a>
             </p>
             <br>
             <p>
-                Special thanks 🙏 to <a class="text-yellow font-bold" href="https://dieterstinglhamber.me">Dieter
+                Special thanks 🙏 to <a class="text-pink font-bold" href="https://dieterstinglhamber.me">Dieter
                     Stinglhamber</a> for the amazing code of this blog
             </p>
         </div>
+    </div>
+
+    <div class="sorcerers">
+        <img style="float: right;" src="/media/simon-the-sorcerer.gif" alt="Doing some magic 🙄">
+        <img style="float: right;-webkit-transform: scaleX(-1);transform: scaleX(-1);" src="/media/simon-the-sorcerer-calypso.gif" alt="Be careful with that!">
     </div>
 @endsection
