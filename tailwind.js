@@ -149,12 +149,6 @@ module.exports = {
   */
 
   fonts: {
-    'outrun': [
-        'Blade Runner'
-    ],
-    'outrun-title': [
-      'Ash',
-    ],
     'dos': [
         'DOS'
     ],
