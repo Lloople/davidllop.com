@@ -1,4 +1,4 @@
-<div class="w-full xl:w-1/4 px-12 py-12 flex content-center justify-center flex-col text-purple-lighter font-dos bg-sidebar">
+<div class="w-full xl:w-1/4 px-12 py-12 flex content-center justify-center flex-col text-purple-lighter font-dos bg-pattern">
     <a href="{{ route('home') }}">
         <img src="/media/me.png"
              style="max-width: 200px; text-align: center; margin: 0 auto;"

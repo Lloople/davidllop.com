@@ -45,14 +45,14 @@
 
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="font-serif bg-purple-darkest text-white">
+    <body class="font-serif bg-purple-darkest text-purple-lighter text-xl">
         @include('_partials.nav')
         
         <div class="xl:flex xl:flex-row xl:h-screen w-full bg-purple-darkest">
             
             @include('_partials.sidebar')
             
-            <main class="xl:relative | w-full xl:w-3/4 xl:px-24 pt-12 h-full | xl:overflow-auto | bg-purple-darker">
+            <main class="xl:relative | w-full xl:w-3/4 xl:px-24 pt-12 h-full | xl:overflow-auto">
                 
                 @yield('content')
 
