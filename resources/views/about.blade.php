@@ -112,28 +112,12 @@
                         <li><a href="https://larecipe.binarytorch.com.my/docs/1.2/overview">LaRecipe</a></li>
                         <li><a href="https://vuepress.vuejs.org">VuePress</a></li>
                         <li><a href="https://sailsjs.com">Sails Framework</a></li>
-                        <li>
-                            <del><a href="https://github.com/laravel/telescope">Laravel Telescope</a></del>
-                        </li>
+                        <li><del><a href="https://github.com/laravel/telescope">Laravel Telescope</a></del></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         @include('_partials.sorcerers')
-        @endsection
-        
-        @section('styles')
-            <style>
-                .about-me-section {
-                    margin-bottom: 20px;
-                }
-                
-                .about-me-icon {
-                    margin: 0 auto;
-                    font-size: 40px;
-                    padding-right: 10px;
-                    float: left;
-                }
-            </style>
+    </div>
 @endsection
