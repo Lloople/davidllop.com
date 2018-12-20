@@ -666,6 +666,17 @@ button,
   text-shadow: 3px 3px #5d298b;
 }
 
+blockquote {
+  margin-bottom: 2rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-left-width: 4px;
+  border-color: #ff00db;
+  font-style: italic;
+}
+
 pre {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -707,6 +718,10 @@ li code {
 a {
   color: #ff00db;
   font-weight: 700;
+}
+
+.bg-pattern {
+  background-image: url("/media/bg_sidebar_pattern.png");
 }
 
 .bg-sidebar {
@@ -1982,7 +1997,7 @@ a {
 }
 
 .font-serif {
-  font-family: MontserratAlternates, Josefin Slab, serif;
+  font-family: serif;
 }
 
 .font-mono {
@@ -5504,7 +5519,7 @@ a {
   }
 
   .sm\:font-serif {
-    font-family: MontserratAlternates, Josefin Slab, serif;
+    font-family: serif;
   }
 
   .sm\:font-mono {
@@ -8997,7 +9012,7 @@ a {
   }
 
   .md\:font-serif {
-    font-family: MontserratAlternates, Josefin Slab, serif;
+    font-family: serif;
   }
 
   .md\:font-mono {
@@ -12490,7 +12505,7 @@ a {
   }
 
   .lg\:font-serif {
-    font-family: MontserratAlternates, Josefin Slab, serif;
+    font-family: serif;
   }
 
   .lg\:font-mono {
@@ -15983,7 +15998,7 @@ a {
   }
 
   .xl\:font-serif {
-    font-family: MontserratAlternates, Josefin Slab, serif;
+    font-family: serif;
   }
 
   .xl\:font-mono {
