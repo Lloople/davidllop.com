@@ -26,7 +26,7 @@
     <div class="flex h-full w-full about flex-col font-dos">
         <div class="max-w-xl mx-auto | px-8 xl:px-24 pb-6 xl:py-6">
             <img src="{{ url('media/me.png') }}"
-                 class="mx-auto text-center xl:float-right p-8 clearfix xl:mt-8 flex" width="250">
+                 class="mx-auto text-center xl:float-right p-8 clearfix xl:mt-8 flex bg-transparent-white" width="250">
             
             <div class="about-me-section">
                 
