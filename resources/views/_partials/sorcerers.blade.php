@@ -16,8 +16,7 @@
             <div data-wait="3000" class="cbbl -right">Never a truer word was spoken.</div>
         </div>
     </div>
-
-
+    
     <div class="characters">
         <img id="calypso" class="w-8 flip-h" src="/media/simon-the-sorcerer-calypso.gif" alt="Calypso from Fleur deLys">
         <img id="simon" class="w-12" src="/media/simon-the-sorcerer.gif" alt="Simon The Sorcerer">
@@ -50,7 +49,9 @@
 
         conversationStarted = true;
 
-        let bubbles = Array.from(document.querySelectorAll('.conversations .conversation[data-number="'+conversation+'"] div'));
+        let bubbles = Array.from(
+            document.querySelectorAll('.conversations .conversation[data-number="'+conversation+'"] div')
+        );
 
         for (let index in bubbles) {
             let bubble = bubbles[index];
@@ -70,6 +71,6 @@
     let wait = (ms) => {
         return new Promise((resolve, reject) => {
             setTimeout(() => { resolve(); }, ms);
-        })
+        });
     };
 </script>
