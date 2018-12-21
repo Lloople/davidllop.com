@@ -53,6 +53,31 @@ a {
   background-image: url('/media/bg_sidebar_pattern.png');
 }
 
+.sorcerers {
+  position: relative;
+}
+.characters {
+  margin-right: 80px;
+}
+.conversation {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: 80px;
+  margin-left: 100px;
+  text-align: right;
+}
+
+.conversation .cbbl {
+  display: none;
+  max-width: 300px;
+  text-align: left;
+}
+
+.conversation .cbbl.visible {
+  display: inline-block;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
