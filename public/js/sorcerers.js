@@ -1,17 +1,13 @@
 let conversationStarted = false;
 let conversation = 1;
-const lastConversation = document.querySelector('.conversations .conversation:last-child').dataset.number;
+const conversations =  document.querySelectorAll('.conversations .conversation');
 
 document.querySelector('#simon').addEventListener('click', async (e) => {
     e.preventDefault();
 
-    if (conversation > lastConversation) {
-        conversation = lastConversation;
-    }
-
     await startConversation();
 
-    if (conversation < lastConversation) {
+    if (conversation < conversations.length) {
         conversation++;
     }
 });
@@ -23,9 +19,7 @@ let startConversation = async () => {
 
     conversationStarted = true;
 
-    let bubbles = Array.from(
-        document.querySelectorAll('.conversations .conversation[data-number="'+conversation+'"] div')
-    );
+    let bubbles = Array.from(conversations[conversation - 1].querySelectorAll('div'));
 
     for (let index in bubbles) {
         let bubble = bubbles[index];
