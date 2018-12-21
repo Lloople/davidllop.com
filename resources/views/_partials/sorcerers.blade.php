@@ -15,10 +15,18 @@
             <div data-wait="6000" class="cbbl">I really wish I could help you but I'm just a clueless old fool.</div>
             <div data-wait="3000" class="cbbl -right">Never a truer word was spoken.</div>
         </div>
+
+        <div class="conversation xs:text-center" data-number="3">
+            <div data-wait="3000" class="cbbl -right">Still clueless?</div>
+            <div data-wait="3000" class="cbbl">I'm afraid so.</div>
+            <div data-wait="3000" class="cbbl -right">Still look like a Father Christmas?</div>
+            <div data-wait="3000" class="cbbl">I'm afraid so.</div>
+            <div data-wait="3000" class="cbbl -right">Good.</div>
+        </div>
     </div>
 
     <div class="characters">
-        <img id="calypso" class="w-8 flip-h" src="/media/simon-the-sorcerer-calypso.gif" alt="Calypso from Fleur deLys">
+        <img id="calypso" class="w-8 flip-h" src="/media/simon-the-sorcerer-calypso.gif" alt="Calypso from Fleur de Lys">
         <img id="simon" class="w-12" src="/media/simon-the-sorcerer.gif" alt="Simon The Sorcerer">
     </div>
 </div>
