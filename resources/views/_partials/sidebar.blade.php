@@ -2,23 +2,23 @@
     <a href="{{ route('home') }}">
         <img src="{{ url('media/me.png') }}"
              alt="{{ config('info.name') }}"
-             class="handsome-guy hidden xl:block"
+             class="handsome-guy hidden xl:block bg-transparent-white mb-4"
         >
     </a>
     
     <div class="text-center | mt-2 mb-4 xl:mb-8">
         <a class="no-underline" href="{{ route('home') }}">
-            <h1 class="text-green font-bold font-amiga uppercase text-2xl">
+            <h1 class="text-green font-bold font-amiga uppercase text-2xl mb-4">
                 {{ config('info.name') }}
             </h1>
         </a>
-        <h2 class="text-white font-normal font-amiga uppercase text-xl">
+        <h2 class="text-white font-normal font-amiga uppercase text-xl mb-4">
             {{ config('info.job_position') }}
         </h2>
         
         @include('_partials.social')
         
-        <p class="mt-8 text-white text-2xl | pb-8 | hidden xl:block">
+        <p class="mt-8 text-white text-2xl | pb-8 | hidden xl:block mb-4">
             {{ config('info.description') }}
         </p>
     </div>

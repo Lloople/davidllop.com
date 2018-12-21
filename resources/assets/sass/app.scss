@@ -78,6 +78,18 @@ a {
   display: inline-block;
 }
 
+.bg-transparent-white {
+  -webkit-filter: drop-shadow(1px 1px 0 white)
+  drop-shadow(-1px 1px 0 white)
+  drop-shadow(1px -1px 0 white)
+  drop-shadow(-1px -1px 0 white);
+
+  filter: drop-shadow(1px 1px 0 white)
+  drop-shadow(-1px 1px 0 white)
+  drop-shadow(1px -1px 0 white)
+  drop-shadow(-1px -1px 0 white);
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
