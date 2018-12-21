@@ -40,6 +40,7 @@
         <link rel="stylesheet" href="{{ mix('css/font.css') }}">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <link rel="stylesheet" href="{{ mix('css/hljs.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/cbbl.min.css') }}">
 
         @yield('styles')
 

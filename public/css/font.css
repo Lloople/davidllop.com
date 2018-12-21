@@ -1,1 +1,13 @@
-@font-face{font-family:DOS;src:url("../fonts/dos.ttf") format("truetype");font-weight:200;font-style:normal}@font-face{font-family:Amiga4Ever;src:url("../fonts/amiga4ever.ttf") format("truetype");font-weight:200;font-style:normal}
+@font-face {
+  font-family: 'DOS';
+  src: url("../fonts/dos.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Amiga4Ever';
+  src: url("../fonts/amiga4ever.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
