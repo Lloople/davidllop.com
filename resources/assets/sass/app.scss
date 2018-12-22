@@ -34,11 +34,11 @@ pre {
 }
 
 pre code {
-  @apply text-base leading-normal font-dos p-6 block bg-purple-lighter border border-purple-lighter overflow-x-scroll text-blue;
+  @apply .text-base .leading-normal .font-dos .p-6 .block .bg-purple-lighter .border .border-purple-lighter .overflow-x-scroll .text-purple-dark;
 }
 
 p code, li code {
-  @apply .text-base .leading-normal .font-dos .px-1 .bg-purple-lighter .border .border-purple-lighter .rounded-sm text-blue;
+  @apply .text-base .leading-normal .font-dos .px-1 .bg-purple-lighter .border .border-purple-lighter .rounded-sm .text-purple-dark;
 }
 
 .about p {
