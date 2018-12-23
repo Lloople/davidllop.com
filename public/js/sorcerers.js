@@ -27,12 +27,12 @@ document.querySelector('.sorcerers').addEventListener('click', () => {
         document.querySelector('.sorcerers').addEventListener('mouseover', () => {
             audio.volume = 0.7;
         });
-    }
-});
 
-// Mute the music when the mouse leaves the Sorcerers area
-document.querySelector('.sorcerers').addEventListener('mouseleave', (e) => {
-    audio.volume = 0.0;
+        // Mute the music when the mouse leaves the Sorcerers area
+        document.querySelector('.sorcerers').addEventListener('mouseleave', (e) => {
+            audio.volume = 0.0;
+        });
+    }
 });
 
 let startConversation = async () => {
