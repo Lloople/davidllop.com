@@ -1,4 +1,4 @@
-<div class="sorcerers text-right xs:text-center">
+<div class="sorcerers text-right xs:text-center font-dos">
     <div class="conversations">
         <div class="conversation xs:text-center">
             <div data-wait="1500" class="cbbl -right">Got any hints?</div>
@@ -16,7 +16,7 @@
             <div data-wait="1500" class="cbbl -right">Never a truer word was spoken.</div>
         </div>
 
-        <div class="conversation xs:text-center">
+        <div class="conversation conversation-short xs:text-center">
             <div data-wait="1000" class="cbbl -right">Still clueless?</div>
             <div data-wait="1000" class="cbbl">I'm afraid so.</div>
             <div data-wait="1500" class="cbbl -right">Still look like a Father Christmas?</div>
@@ -25,9 +25,9 @@
         </div>
     </div>
 
-    <div class="characters">
-        <img id="calypso" class="w-8 flip-h" src="/media/simon-the-sorcerer-calypso.gif" alt="Calypso from Fleur de Lys">
-        <img id="simon" class="w-12" src="/media/simon-the-sorcerer.gif" alt="Simon The Sorcerer">
+    <div class="characters absolute pin-b pin-r">
+        <img id="calypso" class="w-12 flip-h" src="/media/simon-the-sorcerer-calypso.gif" alt="Calypso from Fleur de Lys">
+        <img id="simon" class="w-18" src="/media/simon-the-sorcerer.gif" alt="Simon The Sorcerer">
     </div>
 </div>
 

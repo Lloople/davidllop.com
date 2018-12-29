@@ -25,6 +25,10 @@
   text-shadow: 3px 3px #5d298b;
 }
 
+.retro-title {
+  @apply .article-title .text-pink .font-amiga .uppercase;
+}
+
 blockquote {
   @apply .mb-8 .mx-2 .px-4 .border-l-4 .border-pink .italic;
 }
@@ -45,19 +49,25 @@ p code, li code {
   @apply .text-xl .text-justify .tracking-wide;
 }
 
+.elements-breath-10 * {
+  @apply .mb-10;
+}
+
 a {
   @apply .text-pink .font-bold;
 }
 
 .bg-pattern {
   background-image: url('/media/bg_sidebar_pattern.png');
+  background-size: 95%;
 }
 
 .sorcerers {
   position: relative;
 }
+
 .characters {
-  margin-right: 80px;
+  margin-right: 60px;
 }
 
 .conversation {
@@ -67,6 +77,11 @@ a {
   margin-bottom: 80px;
   margin-left: 100px;
   text-align: right;
+}
+
+.conversation-short {
+  margin-left: 0px;
+  margin-right: 25px;
 }
 
 .conversation .cbbl {
@@ -89,6 +104,23 @@ a {
   drop-shadow(-1px 1px 0 white)
   drop-shadow(1px -1px 0 white)
   drop-shadow(-1px -1px 0 white);
+}
+
+.title-404 {
+  font-size: 125px;
+  text-shadow: 7px 7px #5d298b;
+
+}
+
+.simon-performance {
+  @apply .bg-transparent-white;
+
+}
+
+@media (min-width: 1200px) {
+  .simon-performance {
+    max-width: 650px;
+  }
 }
 
 /**

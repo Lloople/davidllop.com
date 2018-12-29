@@ -1,12 +1,11 @@
-<div class="w-full xl:w-1/4 px-12 py-12 flex content-center justify-center flex-col text-purple-lighter font-dos bg-pattern">
-    <a href="{{ route('home') }}">
-        <img src="{{ url('media/me.png') }}"
+<div class="w-full xl:w-1/4 px-12 py-12 flex content-center justify-center flex-col text-purple-lighter font-dos relative bg-pattern">
+    <a href="{{ route('home') }}" class="no-underline">
+        <img src="{{ url($sidebarImage ?? 'media/me.png') }}"
              alt="{{ config('info.name') }}"
-             class="handsome-guy hidden xl:block bg-transparent-white mb-4"
+             class="handsome-guy hidden xl:block bg-transparent-white mb-4 opacity-75"
         >
     </a>
-    
-    <div class="text-center | mt-2 mb-4 xl:mb-8">
+    <div class="text-center | mt-2 mb-4 xl:mb-8 z-10">
         <a class="no-underline" href="{{ route('home') }}">
             <h1 class="text-green font-bold font-amiga uppercase text-2xl mb-4">
                 {{ config('info.name') }}
