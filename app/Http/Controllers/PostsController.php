@@ -8,7 +8,7 @@ use Spatie\Sheets\Sheets;
 class PostsController
 {
 
-    public function show(string $slug, Sheets $sheets): View
+    public function __invoke(string $slug, Sheets $sheets): View
     {
         $posts = $sheets->all()->sortByDesc('date');
 

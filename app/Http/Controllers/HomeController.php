@@ -8,7 +8,7 @@ use Spatie\Sheets\Sheets;
 class HomeController
 {
 
-    public function index(Sheets $sheets): View
+    public function __invoke(Sheets $sheets): View
     {
         $posts = $sheets
             ->all()

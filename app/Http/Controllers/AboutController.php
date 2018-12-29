@@ -6,7 +6,7 @@ use Illuminate\View\View;
 
 class AboutController
 {
-    public function index(): View
+    public function __invoke(): View
     {
         return view('about');
     }
