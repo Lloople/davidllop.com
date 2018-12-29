@@ -24,14 +24,14 @@
 
 @section('content')
     <div class="flex h-full w-full flex-col font-dos">
-        <div class="max-w-xl mx-auto | elements-breath-10 px-8 xl:px-24 mb-8 xl:py-6">
-            <h1 class="retro-title text-center">Editor</h1>
+        <div class="max-w-xl mx-auto | elements-breath-10 px-8 xl:px-24 pb-24 xl:py-6">
+            <h2 class="retro-title text-center">Editor</h2>
             <p>
                 I tried almost every IDE and Code Editor out there but I always come back to <a href="https://www.jetbrains.com/phpstorm">PhpStorm</a>. I have it conigured
                 to display just the code hiding tabs, toolbars, sidebars, breadcrumbs... Most of the time I have the IDE window at the center of the screen in a
                 small size. This helps me to stay focused in a few lines at a time.
             </p>
-            <img src="/media/uses/ide_setup.jpg" alt="My desktop with IDE at the center">
+            <img class="mx-auto text-center" src="/media/uses/ide_setup.jpg" alt="My desktop with IDE at the center">
             <p>
                 <strong>THEME:></strong> I'll always go to the dark side on this matter. For now using the default's IDE configuration: Darcula.
             </p>
@@ -42,43 +42,43 @@
                 This theme is included in <a href="https://twitter.com/daylerees">Dayle Rees</a>'s collection <a href="https://rainglow.io">Rainglow</a>. As easy as install a plugin in your
                 IDE or Editor of choice and choose the colors that best suits for you.
             </p>
-            <h1 class="retro-title text-center">Window Management</h1>
+            <h2 class="retro-title text-center">Window Management</h2>
             <p>
                 Since I moved from Windows back in the day I missed some way to arrange the windows on the screen. I'm using <a href="https://www.spectacleapp.com">Spectacle</a>.
                 It works with keyboard shortcuts instead of moving windows to the edge. I always modify the keystrokes for the four corners to match <code>cmd+opt+ctrl+[1,2,3,4]</code>
             </p>
-            <h1 class="retro-title text-center">Browser</h1>
+            <h2 class="retro-title text-center">Browser</h2>
             <p>
                 I use Safari as my personal browser because of all the features it has regarding syncing with the iPhone. I also like to check the websites I made with it since I think
                 that currently it's the "less standard" browser out there. For develop purposes I prefer Google Chrome for request inspection and console tasks.
             </p>
-            <h1 class="retro-title text-center">Environment</h1>
+            <h2 class="retro-title text-center">Environment</h2>
             <p>
                 I use <a href="https://laravel.com/docs/5.7/valet">Valet</a> for local development. Previously I've used <a href="https://laravel.com/docs/5.7/homestead">Homestead</a> with
                 great results, but now I'm focusing on newer sites without backwards compatibility, so I'm fine with just one version of PHP installed in my machine.
             </p>
-            <h1 class="retro-title text-center">Database</h1>
+            <h2 class="retro-title text-center">Database</h2>
             <p>
                 <a href="http://sequelpro.com">Sequel Pro</a>. That's it. It's the best MySQL manager out there for free,
                 it's <a href="https://github.com/sequelpro/sequelpro">open source and currently maintained</a>.
             </p>
-            <h1 class="retro-title text-center">Console</h1>
+            <h2 class="retro-title text-center">Console</h2>
             <p>
                 Currently I'm using the MacOSX Terminal App. I always wanted to try all that stuff out there, <a href="https://iterm2.com">iTerm2</a>, <a href="https://ohmyz.sh">Oh My ZSH</a>...
                 But never felt the necessity neither found the time.
             </p>
-            <h1 class="retro-title text-center">Writing</h1>
+            <h2 class="retro-title text-center">Writing</h2>
             <p>
                 When I have to write something I chose <a href="https://macdown.uranusjr.com">MacDown</a>. It's easy to use and can see a live preview of the result. For writing emojis
                 I use <a href="https://matthewpalmer.net/rocket/">Rocket</a>
             </p>
-            <h1 class="retro-title text-center">Other Apps</h1>
+            <h2 class="retro-title text-center">Other Apps</h2>
             <p>For Email, Calendar, Reminders and Notes I use the Apple's default apps.</p>
             <p>For music I use Spotify and honestly I can't live without it.</p>
 
-            <h1 class="retro-title text-center">Desktop Setup</h1>
+            <h2 class="retro-title text-center">Desktop Setup</h2>
             <p>I own a Macbook Pro 13" with TouchBar 2017 and I'm very happy with it. The keyboard feels weird at first but I got used to it and can't use the previous version anymore.</p>
-            <h3 class="retro-title text-center">Output</h3>
+            <h4 class="retro-title text-center">Output</h4>
             <p>At home I have a <a href="https://www.amazon.com/Dell-UltraSharp-27-Inch-LED-Lit-Monitor/dp/B00P0EQD1Q">Dell UltraSharp U2715H</a> monitor both for work (MacBook)
                 and Gaming (Windows, SNES Mini and NES Mini <del>PlayStation Classic soon...</del>).</p>
             <p>I use <a href="https://www.amazon.com/Laptop-Bestand-Macbook-Cooling-Patented/dp/B079N75V58">Laptop Stand Bestand</a> to put my Macbook side by side with the
@@ -86,7 +86,7 @@
             <p>My headphones are Sennheiser HD50. They're no longer in production but mines still holds the day. The audio is awesome and I have them for almost 15 years now. They were pretty
                 cheap for the good quality. For work I'm currently using <a href="https://buy.mi.com/es/item/3182200018">Xiaomi Mi Headphones Comfort</a> (can't find the link in english). They
                 were pretty cheap and the sound is awesome. Also they have a good ambient noise reduction.</p>
-            <h3 class="retro-title text-center">Input</h3>
+            <h4 class="retro-title text-center">Input</h4>
             <p>I type using a <a href="https://www.amazon.com/CORSAIR-K70-Mechanical-Gaming-Keyboard/dp/B01ER4B8S2">Corsair K70 Lux</a> Mechanical Keyboard. I've switched
             the Windows and Alt keys to match the Mac layout.</p>
             <p>I point with a <a href="https://www.amazon.com/CORSAIR-M65-Pro-RGB-Adjustable/dp/B01D63UU52">Corsair M65 Pro</a>. The back / forward buttons on the side doesn't work

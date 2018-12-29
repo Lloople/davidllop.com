@@ -7,13 +7,14 @@
                 Home
             </a>
         </li>
-        <li class="px-2 pr-8 xl:pr-6 xl:pl-4 py-3">
+        <li class="px-2 xl:pl-4 py-3">
             <a href="{{ route('about') }}"
                class="font-dos uppercase {{ request()->routeIs('about') ? 'text-green font-bold underline' : 'text-purple-lighter no-underline' }}"
             >
                 About
             </a>
-        </li><li class="px-2 pr-8 xl:pr-6 xl:pl-4 py-3">
+        </li>
+        <li class="px-2 pr-8 xl:pr-6 xl:pl-4 py-3">
             <a href="{{ route('uses') }}"
                class="font-dos uppercase {{ request()->routeIs('uses') ? 'text-green font-bold underline' : 'text-purple-lighter no-underline' }}"
             >

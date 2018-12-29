@@ -45,10 +45,6 @@ p code, li code {
   @apply .text-base .leading-normal .font-dos .px-1 .bg-purple-lighter .border .border-purple-lighter .rounded-sm .text-purple-dark;
 }
 
-.about p {
-  @apply .text-xl .text-justify .tracking-wide;
-}
-
 .elements-breath-10 * {
   @apply .mb-10;
 }

@@ -23,7 +23,7 @@
 @endsection
 
 @section('content')
-    <div class="mt-6 mx-2 xl:mx-24 | text-purple-lighter font-dos overflow-hidden">
+    <div class="mt-6 mx-2 xl:mx-24 | text-purple-lighter font-dos overflow-hidden pb-24 xl:pb-0">
         <span class="text-purple-light font-semibold font-amiga | block mb-2">
             <time>{{ $post->date->format('M d, Y') }}</time>
         </span>
