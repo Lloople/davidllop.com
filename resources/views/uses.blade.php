@@ -33,19 +33,19 @@
             </p>
             <img class="mx-auto text-center" src="/media/uses/ide_setup.jpg" alt="My desktop with IDE at the center">
             <p>
-                <strong>THEME:></strong> I'll always go to the dark side on this matter. For now using the default's IDE configuration: Darcula.
+                <strong>THEME:></strong> I'll always go to the dark side on this matter. For now I'm using the default's IDE configuration: Darcula.
             </p>
             <p>
                 <strong>COLOR SCHEME:></strong> Currently I'm using <a href="https://rainglow.io/preview/#lavender">Lavender</a>. I've always used dark color schemes and I chosed this one
                 because of it's <a href="https://www.youtube.com/playlist?list=PLtD0K2KQF24tC5slodfxK6z7eMo01VHS0">Retrowave</a> feeling.
                 <br>
                 This theme is included in <a href="https://twitter.com/daylerees">Dayle Rees</a>'s collection <a href="https://rainglow.io">Rainglow</a>. As easy as install a plugin in your
-                IDE or Editor of choice and choose the colors that best suits for you.
+                IDE or Editor of choice and choose the colors that best suits you.
             </p>
             <h2 class="retro-title text-center">Window Management</h2>
             <p>
                 Since I moved from Windows back in the day I missed some way to arrange the windows on the screen. I'm using <a href="https://www.spectacleapp.com">Spectacle</a>.
-                It works with keyboard shortcuts instead of moving windows to the edge. I always modify the keystrokes for the four corners to match <code>cmd+opt+ctrl+[1,2,3,4]</code>
+                It works with keyboard shortcuts instead of moving windows to the edge. I always modify the keystrokes for the four corners to match <code>cmd+opt+ctrl+[1,2,3,4]</code>.
             </p>
             <h2 class="retro-title text-center">Browser</h2>
             <p>
@@ -70,7 +70,7 @@
             <h2 class="retro-title text-center">Writing</h2>
             <p>
                 When I have to write something I chose <a href="https://macdown.uranusjr.com">MacDown</a>. It's easy to use and can see a live preview of the result. For writing emojis
-                I use <a href="https://matthewpalmer.net/rocket/">Rocket</a>
+                I use <a href="https://matthewpalmer.net/rocket/">Rocket</a>.
             </p>
             <h2 class="retro-title text-center">Other Apps</h2>
             <p>For Email, Calendar, Reminders and Notes I use the Apple's default apps.</p>
@@ -79,22 +79,22 @@
             <h2 class="retro-title text-center">Desktop Setup</h2>
             <p>I own a Macbook Pro 13" with TouchBar 2017 and I'm very happy with it. The keyboard feels weird at first but I got used to it and can't use the previous version anymore.</p>
             <h4 class="retro-title text-center">Output</h4>
-            <p>At home I have a <a href="https://www.amazon.com/Dell-UltraSharp-27-Inch-LED-Lit-Monitor/dp/B00P0EQD1Q">Dell UltraSharp U2715H</a> monitor both for work (MacBook)
-                and Gaming (Windows, SNES Mini and NES Mini <del>PlayStation Classic soon...</del>).</p>
-            <p>I use <a href="https://www.amazon.com/Laptop-Bestand-Macbook-Cooling-Patented/dp/B079N75V58">Laptop Stand Bestand</a> to put my Macbook side by side with the
+            <p>At home I have a <a href="https://www.amazon.com/Dell-UltraSharp-27-Inch-LED-Lit-Monitor/dp/B00P0EQD1Q">Dell UltraSharp U2715H</a> monitor for work (MacBook)
+                and Gaming (Windows, SNES Mini and NES Mini. <del>PlayStation Classic soon...</del>).</p>
+            <p>I use this <a href="https://www.amazon.com/Laptop-Bestand-Macbook-Cooling-Patented/dp/B079N75V58">Laptop Stand Bestand</a> to put my Macbook side by side with the
                 monitor and have two screens.</p>
-            <p>My headphones are Sennheiser HD50. They're no longer in production but mines still holds the day. The audio is awesome and I have them for almost 15 years now. They were pretty
+            <p>My headphones are Sennheiser HD50. They're no longer in production but mine still holds the day. The audio is awesome and I have them for almost 15 years now. They were pretty
                 cheap for the good quality. For work I'm currently using <a href="https://buy.mi.com/es/item/3182200018">Xiaomi Mi Headphones Comfort</a> (can't find the link in english). They
-                were pretty cheap and the sound is awesome. Also they have a good ambient noise reduction.</p>
+                were pretty cheap and the sound is awesome. Also they have a good ambient noise reduction which is pretty helpful at the office.</p>
             <h4 class="retro-title text-center">Input</h4>
             <p>I type using a <a href="https://www.amazon.com/CORSAIR-K70-Mechanical-Gaming-Keyboard/dp/B01ER4B8S2">Corsair K70 Lux</a> Mechanical Keyboard. I've switched
             the Windows and Alt keys to match the Mac layout.</p>
-            <p>I point with a <a href="https://www.amazon.com/CORSAIR-M65-Pro-RGB-Adjustable/dp/B01D63UU52">Corsair M65 Pro</a>. The back / forward buttons on the side doesn't work
-                with the MacOSX and I haven't found any solution for this, but's it not really bothering me. The mouse feeling is awesome and I still use it when gaming on Windows.</p>
-            <p>Under the keyboard and the mouse I have a <a href="https://www.amazon.com/CORSAIR-MM300-Anti-Fray-High-Performance-CH-9000108-WW/dp/B01798VS4C">Corsair MM 300 Extended Mouse Pad</a>.
+            <p>I point with a <a href="https://www.amazon.com/CORSAIR-M65-Pro-RGB-Adjustable/dp/B01D63UU52">Corsair M65 Pro</a> mouse. The back / forward buttons on the side doesn't work
+                with the MacOSX and I haven't found any solution for this, but it's not really bothering me. The mouse feeling is awesome and I also use it when gaming on Windows.</p>
+            <p>Under the keyboard and the mouse I have a <a href="https://www.amazon.com/CORSAIR-MM300-Anti-Fray-High-Performance-CH-9000108-WW/dp/B01798VS4C">Corsair MM 300 Extended</a> Mouse Pad.
             I bought it in an offer along with the mouse and the keyboard but didn't regret it. The feel is so premium and it has boat sails on it!</p>
-            <p>Desktop is not important by now. It was here when we moved in and can't get rid of it. Chair is not listed yet, I'm waiting for
-                <a href="https://twitter.com/christophrumpel/status/1078374544870658050">Christoph Rumpel's decision</a> before taking my own :)</p>
+            <p>Desktop table is nothing important by now. It was here when we moved in and can't get rid of it. Chair is not listed yet, I'm waiting for
+                <a href="https://twitter.com/christophrumpel/status/1078374544870658050">Christoph Rumpel's decision</a> before buying my own :)</p>
             <p>I have a lava lamp on the corner. Can't remember where I bought it but it's just awesome to have it there while coding.</p>
         </div>
 
