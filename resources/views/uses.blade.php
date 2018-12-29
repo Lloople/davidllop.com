@@ -32,11 +32,12 @@
                 small size. This helps me to stay focused in a few lines at a time.
             </p>
             <img class="mx-auto text-center" src="/media/uses/ide_setup.jpg" alt="My desktop with IDE at the center">
+            <h6 class="retro-title">C:\Editor\Theme></h6>
+            <p>I'll always go to the dark side on this matter. For now I'm using the default's IDE configuration: Darcula.</p>
+
+            <h6 class="retro-title">C:\Editor\Color Scheme></h6>
             <p>
-                <strong>THEME:></strong> I'll always go to the dark side on this matter. For now I'm using the default's IDE configuration: Darcula.
-            </p>
-            <p>
-                <strong>COLOR SCHEME:></strong> Currently I'm using <a href="https://rainglow.io/preview/#lavender">Lavender</a>. I've always used dark color schemes and I chosed this one
+                Currently I'm using <a href="https://rainglow.io/preview/#lavender">Lavender</a>. I've always used dark color schemes and I chosed this one
                 because of it's <a href="https://www.youtube.com/playlist?list=PLtD0K2KQF24tC5slodfxK6z7eMo01VHS0">Retrowave</a> feeling.
                 <br>
                 This theme is included in <a href="https://twitter.com/daylerees">Dayle Rees</a>'s collection <a href="https://rainglow.io">Rainglow</a>. As easy as install a plugin in your
