@@ -25,10 +25,7 @@
 @section('content')
     <div class="flex h-full w-full flex-col font-dos">
         <div class="max-w-xl mx-auto | px-8 xl:px-24 pb-24 xl:py-6">
-            <img src="{{ url('media/me.png') }}"
-                 class="mx-auto text-center xl:float-right p-8 clearfix xl:mt-8 flex bg-transparent-white" width="250">
-
-            <p><strong class="text-xl">Hi! </strong> I'm a backend developer from <strong>Girona, Catalonia</strong>.
+            <p><strong class="text-4xl">Hi!</strong> I'm a backend developer from <a href="https://www.google.com/maps/place/Girona/@41.7393927,2.4370537,9.76z/data=!4m5!3m4!1s0x12bae72798c8fdab:0xaf3845b6a5296a6f!8m2!3d41.9794005!4d2.8214264">Girona, Catalonia</a>.
             </p>
 
             <h2 class="retro-title-4">C:\Work></h2>
@@ -66,21 +63,24 @@
             <p>I'm following <strong>Game of Thrones</strong> (like everyone else), but also <strong>The Man in The
                     High Castle</strong>, <strong>Startup</strong> and <strong>Electric Dreams</strong> from Prime
                 Video.</p>
+            <p>Recently I've discovered Lost. Everybody tells me that the ending is one of the worst ever made but the rest of
+            the show was great. Even with that I decided to give it a shot.</p>
             <h2 class="retro-title-4">C:\Books></h2>
             <p>I read <strong>Artemis</strong> and <strong>The Martian</strong> by <a
                         href="https://twitter.com/andyweirauthor">Andy Weir</a> which I consider a masterpiece.</p>
-            <p>I've also read <strong>Game of Thrones</strong> and all the stories about <strong>Sherlock
-                    Holmes</strong> (but I can't remember the half of them, time to re-read 😉)</p>
+            <p>I've also read <strong>Song of Ice and Fire</strong> and all the stories about <strong>Sherlock
+                    Holmes</strong></p>
             <p>I'm planning to read <strong>The Man In The High Castle</strong>, since I enjoyed the TV show a lot.
                 I'm a fan of <strong>The Name of The Wind</strong> by Patrick Rothfuss. I've also read <strong>Harry
                     Potter</strong> books a tons of times and enjoyed <strong>Tales from Earthsea</strong> a lot.
             </p>
             <p>I'm starting to read the <strong>Dune</strong> books.</p>
+            <p>I'm finishing Armada, wrote by Ernest Cline, the guy who wrote Ready Player One.</p>
 
             <h2 class="retro-title-4">C:\Fitness></h2>
             <p>I'm subscribed to a gym near work since October 2018. I'm going every single day in the morning
                 (unless I'm traveling or something big happened). That's
-                about {{ now()->diffInDays(date('2018-10-01')) }} days!</p>
+                about {{ $gymDays }} days!</p>
             <p>I'm starting to feel great with myself and it's helping me with my back pain and mental health. In my
                 opinion I think it's very important for all of us to do some exercise. Specially in our profession
                 in which we spend almost 12 hours a day sitting down.</p>
