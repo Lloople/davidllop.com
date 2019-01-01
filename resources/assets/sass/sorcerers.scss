@@ -1,0 +1,31 @@
+.sorcerers {
+  position: relative;
+}
+
+.characters {
+  margin-right: 60px;
+}
+
+.conversation {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: 80px;
+  margin-left: 100px;
+  text-align: right;
+}
+
+.conversation-short {
+  margin-left: 0px;
+  margin-right: 25px;
+}
+
+.conversation .cbbl {
+  display: none;
+  max-width: 300px;
+  text-align: left;
+}
+
+.conversation .cbbl.visible {
+  display: inline-block;
+}

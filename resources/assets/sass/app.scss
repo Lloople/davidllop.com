@@ -3,6 +3,12 @@
 
 @tailwind components;
 
+@import 'retro';
+
+@import 'sorcerers';
+
+@import '404';
+
 .about-me-section {
   margin-bottom: 20px;
 }
@@ -20,13 +26,6 @@
 
 .handsome-guy {
   max-width: 200px; text-align: center; margin: 0 auto;
-}
-.article-title {
-  text-shadow: 3px 3px #5d298b;
-}
-
-.retro-title {
-  @apply .article-title .text-pink .font-amiga .uppercase;
 }
 
 blockquote {
@@ -58,38 +57,6 @@ a {
   background-size: 95%;
 }
 
-.sorcerers {
-  position: relative;
-}
-
-.characters {
-  margin-right: 60px;
-}
-
-.conversation {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  margin-bottom: 80px;
-  margin-left: 100px;
-  text-align: right;
-}
-
-.conversation-short {
-  margin-left: 0px;
-  margin-right: 25px;
-}
-
-.conversation .cbbl {
-  display: none;
-  max-width: 300px;
-  text-align: left;
-}
-
-.conversation .cbbl.visible {
-  display: inline-block;
-}
-
 .bg-transparent-white {
   -webkit-filter: drop-shadow(1px 1px 0 white)
   drop-shadow(-1px 1px 0 white)
@@ -100,23 +67,6 @@ a {
   drop-shadow(-1px 1px 0 white)
   drop-shadow(1px -1px 0 white)
   drop-shadow(-1px -1px 0 white);
-}
-
-.title-404 {
-  font-size: 125px;
-  text-shadow: 7px 7px #5d298b;
-
-}
-
-.simon-performance {
-  @apply .bg-transparent-white;
-
-}
-
-@media (min-width: 1200px) {
-  .simon-performance {
-    max-width: 650px;
-  }
 }
 
 /**

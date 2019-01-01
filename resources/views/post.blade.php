@@ -28,9 +28,9 @@
             <time>{{ $post->date->format('M d, Y') }}</time>
         </span>
 
-        <h3 class="article-title | relative | text-pink uppercase text-2xl font-bold font-amiga | mb-12">
+        <h1 class="article-title text-2xl mb-12">
             > {{ $post->title }}
-        </h3>
+        </h1>
 
         {!! $post->contents !!}
 
@@ -66,7 +66,7 @@
             </li>
         </ul>
 
-        <div class="text-sm text-center mb-3">
+        <div class="text-sm mb-3">
             <p>
                 Found a typo?
                 <a class="text-pink font-bold"

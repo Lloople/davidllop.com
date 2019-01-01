@@ -17,19 +17,16 @@ class HeadingRenderer implements BlockRendererInterface
             throw new \InvalidArgumentException('Incompatible block type: ' . get_class($block));
         }
 
-        $tag = 'h' . ($block->getLevel() + 1);
-
-        $titleFontSize = 5 - $block->getLevel();
-        $class = "article-title | relative | text-pink uppercase text-{$titleFontSize}xl font-bold | mb-6 pt-16";
+        $tagLevel = $block->getLevel() + 1;
 
         $attrs = [
-            'class' => $class,
+            'class' => "retro-title-{$tagLevel} | relative font-bold",
         ];
 
         foreach ($block->getData('attributes', []) as $key => $value) {
             $attrs[$key] = Xml::escape($value, true);
         }
 
-        return new HtmlElement($tag, $attrs, $htmlRenderer->renderInlines($block->children()));
+        return new HtmlElement("h{$tagLevel}", $attrs, $htmlRenderer->renderInlines($block->children()));
     }
 }

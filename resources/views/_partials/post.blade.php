@@ -3,7 +3,7 @@
         <time>{{ $post->date->format('M d, Y') }}</time>
     </span>
     <a href="{{ route('post', [$post->slug]) }}" class="no-underline">
-        <h3 class="article-title | relative | text-pink text-xl xl:text-xl font-bold font-amiga uppercase | mb-6">
+        <h3 class="article-title">
             > {{ $post->title }}
         </h3>
     </a>

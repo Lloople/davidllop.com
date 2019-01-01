@@ -1,0 +1,54 @@
+$retro-shadow-green: #357620;
+$retro-shadow-pink: #5d298b;
+
+@keyframes msdos-cursor {
+  50% {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes msdos-cursor {
+  50% {
+    visibility: hidden;
+  }
+}
+
+.article-title {
+  @apply .text-pink .font-amiga .uppercase .font-bold .text-xl .mb-6 .relative;
+  text-shadow: 3px 3px $retro-shadow-pink;
+}
+
+.retro-title-1 {
+  @apply .text-green .font-dos .uppercase .pt-12 .mb-6;
+  text-shadow: 3px 3px $retro-shadow-green;
+}
+
+.retro-title-2 {
+  @apply .text-green .font-dos .uppercase .pt-12 .mb-6;
+  text-shadow: 2px 2px $retro-shadow-green;
+}
+
+.retro-title-3 {
+  @apply .text-green .font-dos .uppercase .pt-12 .mb-6;
+  text-shadow: 2px 2px $retro-shadow-green;
+}
+
+.retro-title-4 {
+  @apply .text-green .font-dos .uppercase .pt-12 .mb-6;
+  text-shadow: 2px 2px $retro-shadow-green;
+}
+
+.retro-title-5 {
+  @apply .text-green .font-dos .uppercase .pt-12 .mb-6;
+  text-shadow: 1px 1px $retro-shadow-green;
+}
+
+.retro-title-6 {
+  @apply .text-green .font-dos .uppercase .pt-12 .mb-6;
+  text-shadow: 1px 1px $retro-shadow-green;
+}
+
+*[class*='retro-title']::after {
+  content: '_';
+  animation: msdos-cursor 1s step-start 0s infinite;
+  -webkit-animation: msdos-cursor 1s step-start 0s infinite;
+}

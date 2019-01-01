@@ -1,0 +1,15 @@
+.title-404 {
+  font-size: 125px;
+  text-shadow: 7px 7px #5d298b;
+
+}
+
+.simon-performance {
+  @apply .bg-transparent-white;
+}
+
+@media (min-width: 1200px) {
+  .simon-performance {
+    max-width: 650px;
+  }
+}
