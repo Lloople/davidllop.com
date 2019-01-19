@@ -13,8 +13,8 @@ class HomeController
         $posts = $sheets
             ->all()
             ->where('published', true)
-            ->sortByDesc('date')
-            ->paginate(3);
+            ->sortByDesc('date');
+//            ->paginate(3);
 
         return view('home')->with('posts', $posts);
     }
