@@ -8,6 +8,8 @@
     <link rel="me" href="{{ url('') }}" type="text/html">
     <link rel="me" href="mailto:{{ config('info.email') }}">
 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <meta name="robots" content="index,follow,noodp">
     <meta name="googlebot" content="index,follow">
