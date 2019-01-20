@@ -7,7 +7,7 @@
     <meta property="og:url" content="{{ config('info.url') }}">
 
     <meta property="og:title" content="{{ config('info.name') }}">
-    <meta property="og:image" content="{{ asset('media/me.png') }}">
+    <meta property="og:image" content="{{ asset('media/me.jpg') }}">
     <meta property="og:description" content="{{ config('info.description') }}">
     <meta property="og:site_name" content="{{ config('info.name') }}">
     <meta property="og:locale" content="en_US">
@@ -19,7 +19,7 @@
     <meta name="twitter:url" content="{{ config('info.url') }}">
     <meta name="twitter:title" content="{{ config('info.name') }}">
     <meta name="twitter:description" content="{{ config('info.description') }}">
-    <meta name="twitter:image" content="{{ asset('media/me.png') }}">
+    <meta name="twitter:image" content="{{ asset('media/me.jpg') }}">
 @endsection
 
 @section('content')
