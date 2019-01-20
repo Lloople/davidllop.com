@@ -7,7 +7,7 @@
     <meta property="og:url" content="{{ route('post', [$post->slug]) }}">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{ $post->title }}">
-    <meta property="og:image" content="{{ asset('media/me.png') }}">
+    <meta property="og:image" content="{{ asset('media/me.jpg') }}">
     <meta property="og:description" content="{{ $post->summary }}">
     <meta property="og:site_name" content="{{ config('info.name') }}">
     <meta property="og:locale" content="en_US">
@@ -19,7 +19,7 @@
     <meta name="twitter:url" content="{{ route('post', [$post->slug]) }}">
     <meta name="twitter:title" content="{{ $post->title }}">
     <meta name="twitter:description" content="{{ $post->summary }}">
-    <meta name="twitter:image" content="{{ asset('media/me.png') }}">
+    <meta name="twitter:image" content="{{ asset('media/me.jpg') }}">
 @endsection
 
 @section('content')
