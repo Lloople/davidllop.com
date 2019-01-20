@@ -12,8 +12,21 @@ $retro-shadow-pink: #5d298b;
   }
 }
 
+
+a {
+  text-underline-position: under;
+}
+
+li {
+  @apply my-2;
+}
+
+p {
+  @apply .text-xl;
+}
+
 .article-title {
-  @apply .text-pink .font-amiga .uppercase .font-bold .text-xl .mb-6 .relative;
+  @apply .text-pink .font-amiga .uppercase .font-bold .text-xl .relative;
   text-shadow: 3px 3px $retro-shadow-pink;
 }
 
@@ -47,8 +60,47 @@ $retro-shadow-pink: #5d298b;
   text-shadow: 1px 1px $retro-shadow-green;
 }
 
-*[class*='retro-title']::after {
-  content: '_';
-  animation: msdos-cursor 1s step-start 0s infinite;
-  -webkit-animation: msdos-cursor 1s step-start 0s infinite;
+
+nav li:hover {
+  transform: translateY(-8%);
+  transition: 0.2s;
+}
+
+.shadow-green {
+  text-shadow: 3px 3px $retro-shadow-green;
+}
+
+.shadow-white {
+  text-shadow: 3px 3px #888888;
+}
+
+.shadow-green-sm {
+  text-shadow: 2px 2px $retro-shadow-green;
+}
+
+.shadow-white-sm {
+  text-shadow: 2px 2px #888888;
+}
+
+/*
+ Put the cursor underline effect only in desktop since safari will force you to click twice
+ on the link to visit it...
+ More info: https://css-tricks.com/annoying-mobile-double-tap-link-issue
+*/
+
+@media (min-width: 500px) {
+
+  *:hover[class*='retro-title']::after, .article-title:hover::after {
+    content: '_';
+    animation: msdos-cursor 1s step-start 0s infinite;
+    -webkit-animation: msdos-cursor 1s step-start 0s infinite;
+  }
+}
+
+::selection {
+  background: #ff00db; /* WebKit/Blink Browsers */
+  color: black;
+}
+::-moz-selection {
+  background: #ff00db; /* Gecko Browsers */
 }

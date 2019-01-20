@@ -23,61 +23,62 @@
 @endsection
 
 @section('content')
-    <div class="mt-6 mx-2 xl:mx-24 | text-purple-lighter font-dos overflow-hidden pb-24 xl:pb-0">
-        <span class="text-purple-light font-semibold font-amiga | block mb-2">
+    <span class="text-green shadow-green font-semibold font-amiga | block mb-2">
             <time>{{ $post->date->format('M d, Y') }}</time>
         </span>
 
-        <h1 class="article-title text-2xl mb-12">
-            > {{ $post->title }}
-        </h1>
+    <h1 class="article-title text-3xl mb-12">{{ $post->title }}</h1>
 
-        {!! $post->contents !!}
+    {!! $post->contents !!}
 
-        @if (count($otherPosts))
-            <p>You may also like:</p>
-            <ul class="mb-12">
-                @foreach ($otherPosts as $otherPost)
-                    <li>
-                        <a class="text-sm text-green no-underline"
-                           href="{{ route('post', $otherPost->slug) }}">{{ $otherPost->title }}</a>
-                    </li>
-                @endforeach
-            </ul>
-        @endif
-
-        <ul class="flex justify-around | mb-24 | list-reset">
-            <li class="px-1">
-                @if ($previousPost)
-                    <a href="{{ route('post', $previousPost->slug) }}"
-                       class="text-sm text-green no-underline">
-                        << {{ $previousPost->title }}
-                    </a>
-                @endif
-            </li>
-
-            <li class="px-1 text-right">
-                @if ($nextPost)
-                    <a href="{{ route('post', $nextPost->slug) }}"
-                       class="text-sm text-green no-underline text-right">
-                        {{ $nextPost->title }} >>
-                    </a>
-                @endif
-            </li>
+    @if (count($otherPosts) > 1)
+        <p>You may also like:</p>
+        <ul class="mb-12">
+            @foreach ($otherPosts as $otherPost)
+                <li>
+                    <a href="{{ route('post', $otherPost->slug) }}">{{ $otherPost->title }}</a>
+                </li>
+            @endforeach
         </ul>
+    @elseif (count($otherPosts) == 1)
+        <p class="mb-12">You may also like:
+            <a href="{{ route('post', $otherPosts->first()->slug) }}">
+                {{ $otherPosts->first()->title }}
+            </a>
+        </p>
+    @endif
 
-        <div class="text-sm mb-3">
-            <p>
-                Found a typo?
-                <a class="text-pink font-bold"
-                   href="https://github.com/Lloople/davidllop.com/blob/master/posts/{{ $post->date->format('Y-m-d') }}.{{ $post->slug }}.md">
-                    Edit this post</a>.
-                <br>
-            Special thanks to <a class="text-pink font-bold" href="https://dieterstinglhamber.me">Dieter</a> for
-                the amazing code of this blog.</p>
-        </div>
+    <ul class="flex justify-around | mb-24 | list-reset">
+        <li class="px-1">
+            @if ($previousPost)
+                <a href="{{ route('post', $previousPost->slug) }}"
+                   class="shadow-green-sm text-green no-underline font-dos">
+                    << {{ $previousPost->title }}
+                </a>
+            @endif
+        </li>
 
+        <li class="px-1 text-right">
+            @if ($nextPost)
+                <a href="{{ route('post', $nextPost->slug) }}"
+                   class="shadow-green-sm text-green no-underline text-right font-dos">
+                    {{ $nextPost->title }} >>
+                </a>
+            @endif
+        </li>
+    </ul>
+@endsection
+
+@section('afterContent')
+    <div class="mb-24 md:mb-6 mx-2 xl:mx-24">
+        <p class=" font-mono">
+            Found a typo?
+            <a
+                    href="https://github.com/Lloople/davidllop.com/blob/master/posts/{{ $post->date->format('Y-m-d') }}.{{ $post->slug }}.md">
+                Edit this post</a>.
+            <br>
+            Special thanks to <a href="https://dieterstinglhamber.me">Dieter</a> for
+            the amazing code of this blog.</p>
     </div>
     @include('_partials.sorcerers')
-
 @endsection

@@ -47,6 +47,7 @@ let colors = {
   'transparent': 'transparent',
 
   'green': '#41ff00',
+  'green-dark': '#115900',
   'blue': '#0200af',
   'blue-dark': '#072540',
 //  'blue': '#0b3b66',
@@ -83,7 +84,13 @@ let colors = {
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
   'yellow': '#fff200',
-  'white': '#ffffff'
+  'white': '#ffffff',
+  'black': '#1d1d1d',
+  'window-bar':'#0013a4',
+  'window-button': '#c3c6cb',
+  'window-red' : '#ee6b60',
+  'window-green' :'#63c756',
+  'window-yellow' :'#f6be4f'
 }
 
 module.exports = {
@@ -156,6 +163,9 @@ module.exports = {
     'amiga': [
         'Amiga4Ever'
     ],
+    'inter' : [
+        'Inter UI'
+    ],
     'sans': [
       'system-ui',
       'BlinkMacSystemFont',
@@ -174,11 +184,11 @@ module.exports = {
       'serif',
     ],
     'mono': [
-      'Menlo',
-      'Monaco',
-      'Consolas',
-      'Liberation Mono',
-      'Courier New',
+      // 'Menlo',
+      // 'Monaco',
+      // 'Consolas',
+      // 'Liberation Mono',
+      // 'Courier New',
       'monospace',
     ]
   },
@@ -439,6 +449,7 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '128': '32rem',
     '1/2': '50%',
     '1/3': '33.33333%',
     '2/3': '66.66667%',
@@ -487,6 +498,7 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '128': '32rem',
     'full': '100%',
     'screen': '100vh'
   },

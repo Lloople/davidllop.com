@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-        <link rel="me" href="{{ url('') }}" type="text/html">
-        <link rel="me" href="mailto:{{ config('info.email') }}">
+    <link rel="me" href="{{ url('') }}" type="text/html">
+    <link rel="me" href="mailto:{{ config('info.email') }}">
 
-        <meta name="robots" content="index,follow,noodp">
-        <meta name="googlebot" content="index,follow">
 
-        <meta name="google" content="notranslate">
+    <meta name="robots" content="index,follow,noodp">
+    <meta name="googlebot" content="index,follow">
 
-        <meta name="rating" content="General">
-        <meta name="referrer" content="no-referrer">
+    <meta name="google" content="notranslate">
 
-        @if (app()->environment('production'))
-            <base href="{{ url('')  }}">
-            <link rel="index" href="{{ url('') }}">
+    <meta name="rating" content="General">
+    <meta name="referrer" content="no-referrer">
 
-            @include('feed::links')
+    @if (app()->environment('production'))
+        <base href="{{ url('')  }}">
+        <link rel="index" href="{{ url('') }}">
 
-            @if(config('info.google_analytics') !== '')
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-                <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('info.google_analytics') }}"></script>
-                <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
+        @include('feed::links')
 
-                    gtag('config', '{{ config('info.google_analytics') }}');
-                </script>
-            @endif
+        @if(config('info.google_analytics') !== '')
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async
+                    src="https://www.googletagmanager.com/gtag/js?id={{ config('info.google_analytics') }}"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+
+                gtag('js', new Date());
+
+                gtag('config', '{{ config('info.google_analytics') }}');
+            </script>
+        @endif
+    @endif
+
+    @yield('meta')
+
+    <link rel="stylesheet" href="{{ mix('css/font.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/hljs.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/cbbl.min.css') }}">
+
+    @yield('styles')
+
+    <script src="{{ mix('js/app.js') }}" defer></script>
+</head>
+<body class="bg-purple-darkest text-purple-lighter text-xl">
+
+<div class="xl:flex xl:flex-row xl:h-screen w-full bg-purple-darkest">
+
+    <main class="xl:relative | w-full xl:px-24 pt-12 h-full | xl:overflow-auto">
+        @include('_partials.nav')
+        @include('_partials.social')
+
+        <div class="mt-32 mx-2 xl:mx-24 | text-purple-lighter font-mono overflow-hidden pb-12 xl:pb-0 mb-24">
+
+            @yield('content')
+        </div>
+        @hasSection('afterContent')
+            @yield('afterContent')
+        @else
+            @include('_partials.sorcerers')
         @endif
 
-        @yield('meta')
+    </main>
 
-        <link rel="stylesheet" href="{{ mix('css/font.css') }}">
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-        <link rel="stylesheet" href="{{ mix('css/hljs.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/cbbl.min.css') }}">
+</div>
 
-        @yield('styles')
-
-        <script src="{{ mix('js/app.js') }}" defer></script>
-    </head>
-    <body class="font-serif bg-purple-darkest text-purple-lighter text-xl">
-
-        <div class="xl:flex xl:flex-row xl:h-screen w-full bg-purple-darkest">
-
-            @include('_partials.sidebar')
-
-            <main class="xl:relative | w-full xl:w-3/4 xl:px-24 pt-12 h-full | xl:overflow-auto">
-                @include('_partials.nav')
-
-                @yield('content')
-
-            </main>
-
-        </div>
-
-    </body>
+</body>
 </html>

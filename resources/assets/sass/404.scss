@@ -1,15 +1,30 @@
-.title-404 {
-  font-size: 125px;
-  text-shadow: 7px 7px #5d298b;
+.window-border {
+  background: #cdcdcd;
+  padding: 2px 4px 4px 2px;
+  border: 1px solid #000;
 
 }
 
-.simon-performance {
-  @apply .bg-transparent-white;
+.window {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 1px solid #000;
+  z-index: 9999;
 }
 
-@media (min-width: 1200px) {
-  .simon-performance {
-    max-width: 650px;
-  }
+.window .button {
+  background: #c0c0c0;
+  color: #000;
+  display: inline-block;
+  margin: 0px;
+  float: right;
+  border: outset 3px;
+  z-index: 5555;
+}
+
+.window a:active span {
+  background-color: #0013a4;
+  color: white;
 }

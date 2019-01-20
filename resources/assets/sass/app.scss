@@ -9,23 +9,8 @@
 
 @import '404';
 
-.about-me-section {
-  margin-bottom: 20px;
-}
-
-.about-me-icon {
-  margin: 0 auto;
-  font-size: 40px;
-  padding-right: 10px;
-  float: left;
-}
-
 .flip-h {
   -webkit-transform: scaleX(-1);transform: scaleX(-1);
-}
-
-.handsome-guy {
-  max-width: 200px; text-align: center; margin: 0 auto;
 }
 
 blockquote {
@@ -33,15 +18,15 @@ blockquote {
 }
 
 pre {
-  @apply .mt-8 .mb-8;
+  @apply .mt-8 .mb-8 .font-mono;
 }
 
 pre code {
-  @apply .text-base .leading-normal .font-dos .p-6 .block .bg-purple-lighter .border .border-purple-lighter .overflow-x-scroll .text-purple-dark;
+  @apply .text-base .leading-normal .font-mono .p-6 .block .bg-purple-lighter .border .border-purple-lighter .overflow-x-scroll .text-purple-dark;
 }
 
 p code, li code {
-  @apply .text-base .leading-normal .font-dos .px-1 .bg-purple-lighter .border .border-purple-lighter .rounded-sm .text-purple-dark;
+  @apply .text-base .leading-normal .font-mono .px-1 .bg-purple-lighter .border .border-purple-lighter .rounded-sm .text-purple-dark;
 }
 
 .elements-breath-10 * {
@@ -50,11 +35,6 @@ p code, li code {
 
 a {
   @apply .text-pink .font-bold;
-}
-
-.bg-pattern {
-  background-image: url('/media/bg_sidebar_pattern.png');
-  background-size: 95%;
 }
 
 .bg-transparent-white {

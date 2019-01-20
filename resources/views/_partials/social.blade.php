@@ -1,9 +1,8 @@
-<ul class="list-reset | flex justify-center">
+<nav class=" absolute pin-t pin-l | z-10 pt-4 xl:pl-6">
+
+<ul class="list-reset | flex social">
     <li class="mx-2">
-        <a
-            href="/feed"
-            class="text-green hover:text-blue-dark no-underline"
-        >
+        <a href="/feed" class="text-green no-underline">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -21,12 +20,7 @@
         </a>
     </li>
     <li class="mx-2">
-        <a
-            target="_blank"
-            rel="noopener"
-            href="{{ config('info.social.github') }}"
-            class="text-green hover:text-blue-dark no-underline"
-        >
+        <a target="_blank" rel="noopener" href="{{ config('info.social.github') }}" class="text-green no-underline">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -43,12 +37,7 @@
         </a>
     </li>
     <li class="mx-2">
-        <a
-            target="_blank"
-            rel="noopener"
-            href="{{ config('info.social.twitter.url') }}"
-            class="text-green hover:text-blue-dark no-underline"
-        >
+        <a target="_blank" rel="noopener" href="{{ config('info.social.twitter.url') }}" class="text-green no-underline">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -65,3 +54,4 @@
         </a>
     </li>
 </ul>
+</nav>
