@@ -11,11 +11,7 @@ mix
   });
 
 if (mix.inProduction()) {
-  mix
-    .purgeCss({
-      whitelistPatterns: [/language/, /^pre/, /code$/, /visible/, /retro-title-/, /w-/],
-    })
-    .version()
+  mix.version()
 }
 
 mix.js('resources/assets/js/app.js', 'public/js');

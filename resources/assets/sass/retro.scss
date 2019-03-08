@@ -23,7 +23,7 @@ $retro-shadow-pink: #5d298b;
     @apply .mb-8 .mx-2 .px-4 .border-l-4 .border-pink .italic;
 
     p {
-      @apply text-window-button;
+      @apply .text-window-button;
     }
   }
 
@@ -87,7 +87,7 @@ p {
 }
 
 .article-title {
-  @apply .text-pink .font-amiga .uppercase .font-bold .text-xl .relative;
+  @apply .text-pink .font-amiga .uppercase .font-bold .text-xl .relative .whitespace-no-wrap;
   text-shadow: 3px 3px $retro-shadow-pink;
 }
 
