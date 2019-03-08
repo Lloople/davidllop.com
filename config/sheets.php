@@ -5,8 +5,6 @@ return [
 
     'collections' => [
 
-        // An example collection. All keys are optional.
-
         'posts' => [
             'disk' => 'posts',
             'cache' => false,

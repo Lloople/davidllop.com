@@ -4,8 +4,6 @@ const tailwindcss = require('tailwindcss');
 require('laravel-mix-purgecss');
 
 mix
-  .sass('resources/assets/sass/hljs.scss', 'public/css')
-  .sass('resources/assets/sass/font.scss', 'public/css')
   .sass('resources/assets/sass/app.scss', 'public/css')
   .options({
     processCssUrls: false,
@@ -15,7 +13,7 @@ mix
 if (mix.inProduction()) {
   mix
     .purgeCss({
-      whitelistPatterns: [/language/, /hljs/, /^pre/, /code$/, /visible/, /retro-title-/, /w-/],
+      whitelistPatterns: [/language/, /^pre/, /code$/, /visible/, /retro-title-/, /w-/],
     })
     .version()
 }

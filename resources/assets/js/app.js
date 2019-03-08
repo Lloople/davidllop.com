@@ -1,15 +1,66 @@
-import hljs from 'highlight.js'
+let conversationStarted = false;
+let conversation = 1;
+const conversations = document.querySelectorAll('.conversations .conversation');
+let audio = null;
 
-  hljs.registerLanguage('xml', require('highlight.js/lib/languages/xml'));
-  hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
-  hljs.registerLanguage('css', require('highlight.js/lib/languages/css'));
-  hljs.registerLanguage('markdown', require('highlight.js/lib/languages/markdown'));
-  hljs.registerLanguage('javascript', require('highlight.js/lib/languages/javascript'));
-  hljs.registerLanguage('json', require('highlight.js/lib/languages/json'));
-  hljs.registerLanguage('nginx', require('highlight.js/lib/languages/nginx'));
-  hljs.registerLanguage('php', require('highlight.js/lib/languages/php'));
-  hljs.registerLanguage('sql', require('highlight.js/lib/languages/sql'));
-  hljs.registerLanguage('scss', require('highlight.js/lib/languages/scss'));
-  hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
+// Show the next conversation when clicking on Simon
+document.querySelector('#simon').addEventListener('click', async (e) => {
+    e.preventDefault();
 
-  document.querySelectorAll('pre code').forEach(hljs.highlightBlock);
+    await startConversation();
+
+    if (conversation < conversations.length) {
+        conversation++;
+    }
+});
+
+// Load the music after clicking in the Sorcerers area
+document.querySelector('.sorcerers').addEventListener('click', () => {
+
+    // Just one audio element per request, I don't want you to download the music if you don't click on the Sorcerers!
+    if (audio === null) {
+        audio = new Audio('/media/calypso_magicke_emporium.mp3');
+        audio.loop = true;
+        audio.play();
+
+        // Only play music when the mouse is inside the Sorcerers area
+        document.querySelector('.sorcerers').addEventListener('mouseover', () => {
+            audio.volume = 0.7;
+        });
+
+        // Mute the music when the mouse leaves the Sorcerers area
+        document.querySelector('.sorcerers').addEventListener('mouseleave', (e) => {
+            audio.volume = 0.0;
+        });
+    }
+});
+
+let startConversation = async () => {
+    if (conversationStarted) {
+        return;
+    }
+
+    conversationStarted = true;
+
+    let bubbles = Array.from(conversations[conversation - 1].querySelectorAll('div'));
+
+    for (let index in bubbles) {
+        let bubble = bubbles[index];
+
+        bubble.classList.add('visible');
+
+        await wait(bubble.dataset.wait);
+
+        bubble.classList.remove('visible');
+
+        await wait(250);
+    }
+
+    conversationStarted = false;
+};
+
+let wait = (ms) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => { resolve(); }, ms);
+    });
+};

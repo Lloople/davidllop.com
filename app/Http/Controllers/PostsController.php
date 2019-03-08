@@ -20,19 +20,20 @@ class PostsController
 
         $post = $posts->get($postKey);
 
-        $otherPosts = isset($post->category)
-            ? $posts->filter(function ($otherPost) use ($post) {
-                return $otherPost->published
-                    && isset($otherPost->category)
-                    && $otherPost->category === $post->category
-                    && $otherPost !== $post;
-            })
-            : [];
+        $data = [
+            'post' => $post,
+            'previousPost' => $posts->get($postKey + 1),
+            'nextPost' => $posts->get($postKey - 1),
+            'otherPosts' => isset($post->category)
+                ? $posts->filter(function ($otherPost) use ($post) {
+                    return $otherPost->published
+                        && isset($otherPost->category)
+                        && $otherPost->category === $post->category
+                        && $otherPost !== $post;
+                })
+                : []
+        ];
 
-        return view('post')
-            ->with('post', $post)
-            ->with('previousPost', $posts->get($postKey + 1))
-            ->with('nextPost', $posts->get($postKey - 1))
-            ->with('otherPosts', $otherPosts);
+        return view('post', $data);
     }
 }

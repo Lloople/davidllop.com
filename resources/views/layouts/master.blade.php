@@ -45,14 +45,13 @@
 
     @yield('meta')
 
-    <link rel="stylesheet" href="{{ mix('css/font.css') }}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/hljs.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/cbbl.min.css') }}">
 
     @yield('styles')
 
     <script src="{{ mix('js/app.js') }}" defer></script>
+
+    @yield('scripts')
 </head>
 <body class="bg-purple-darkest text-purple-lighter text-xl">
 

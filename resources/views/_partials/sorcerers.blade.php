@@ -30,5 +30,3 @@
         <img id="simon" class="w-18" src="/media/simon-the-sorcerer.gif" alt="Simon The Sorcerer">
     </div>
 </div>
-
-<script src="{{ asset('js/sorcerers.js') }}" defer></script>

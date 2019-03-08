@@ -12,6 +12,67 @@ $retro-shadow-pink: #5d298b;
   }
 }
 
+.markdown-body {
+  font-family: inherit;
+  @apply .mb-8;
+
+  .anchor {
+    float: none;
+  }
+  blockquote {
+    @apply .mb-8 .mx-2 .px-4 .border-l-4 .border-pink .italic;
+
+    p {
+      @apply text-window-button;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    border-bottom: none;
+    @apply .font-dos .uppercase;
+  }
+
+  span.pl-s1, div>pre {
+    color: black;
+  }
+
+  p code, li code {
+    @apply .text-pink .font-bold .italic .border-none;
+  }
+
+  h1 {
+    @apply retro-title-1 text-green;
+  }
+
+  h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+    content: "C:\\";
+  }
+
+  h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+    content:">";
+  }
+
+  h2 {
+    @apply retro-title-2 text-green text-3xl;
+  }
+
+  h3 {
+    @apply retro-title-3 text-green;
+  }
+
+  h4 {
+    @apply retro-title-4 text-green;
+  }
+
+  h5 {
+    @apply retro-title-5 text-green;
+  }
+
+  h6 {
+    @apply retro-title-6 text-green;
+  }
+}
+
 
 a {
   text-underline-position: under;

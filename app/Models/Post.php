@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use GitDown\Facades\GitDown;
 use Spatie\Sheets\Sheet;
 use Spatie\Sheets\Sheets;
 use Illuminate\Support\Collection;
@@ -10,6 +11,12 @@ use Illuminate\Contracts\Support\Htmlable;
 
 class Post extends Sheet implements Htmlable
 {
+
+    public function getContent(): string
+    {
+        return GitDown::parseAndCache(html_entity_decode($this->contents));
+    }
+
     public function toHtml(): string
     {
         return Cache::rememberForever("posts:{$this->slug}:html", function () {
@@ -30,7 +37,7 @@ class Post extends Sheet implements Htmlable
                     'title' => $post->title,
                     'updated' => $post->date,
                     'summary' => $post->summary,
-                    'content' => $post->contents,
+                    'content' => $post->body,
                     'link' => route('post', [$post->slug]),
                     'author' => config('info.name'),
                 ];

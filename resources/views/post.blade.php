@@ -20,6 +20,7 @@
     <meta name="twitter:title" content="{{ $post->title }}">
     <meta name="twitter:description" content="{{ $post->summary }}">
     <meta name="twitter:image" content="{{ asset('media/me.jpg') }}">
+
 @endsection
 
 @section('content')
@@ -29,7 +30,9 @@
 
     <h1 class="article-title text-3xl mb-12">{{ $post->title }}</h1>
 
-    {!! $post->contents !!}
+    <div class="markdown-body">
+    {!! $post->getContent() !!}
+    </div>
 
     @if (count($otherPosts) > 1)
         <p>You may also like:</p>
