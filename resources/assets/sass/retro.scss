@@ -12,6 +12,17 @@ $retro-shadow-pink: #5d298b;
   }
 }
 
+@keyframes msdos-cursor-title {
+  50% {
+    content: ">_";
+  }
+}
+@-webkit-keyframes msdos-cursor-title {
+  50% {
+    content: ">_";
+  }
+}
+
 .markdown-body {
   font-family: inherit;
   @apply .mb-8;
@@ -87,7 +98,7 @@ p {
 }
 
 .article-title {
-  @apply .text-pink .font-amiga .uppercase .font-bold .text-xl .relative .whitespace-no-wrap;
+  @apply .text-pink .font-amiga .uppercase .font-bold .text-xl .relative;
   text-shadow: 3px 3px $retro-shadow-pink;
 }
 
@@ -155,6 +166,11 @@ nav li:hover {
     content: '_';
     animation: msdos-cursor 1s step-start 0s infinite;
     -webkit-animation: msdos-cursor 1s step-start 0s infinite;
+  }
+
+  .markdown-body>h1:hover::after, .markdown-body>h2:hover::after, .markdown-body>h3:hover::after, .markdown-body>h4:hover::after, .markdown-body>h5:hover::after, .markdown-body>h6:hover::after {
+    animation: msdos-cursor-title 1s step-start 0s infinite;
+    -webkit-animation: msdos-cursor-title 1s step-start 0s infinite;
   }
 }
 
