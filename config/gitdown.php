@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'allowIframes' => true,
+    'allowedTags' => ['iframe', 'script', 'blockquote'],
 
     'syntaxTheme' => 'dark'
 

@@ -168,6 +168,9 @@ nav li:hover {
     -webkit-animation: msdos-cursor 1s step-start 0s infinite;
   }
 
+  /*
+   * This animation below is not working, I'll try to figure a solution in the future...
+   */
   .markdown-body>h1:hover::after, .markdown-body>h2:hover::after, .markdown-body>h3:hover::after, .markdown-body>h4:hover::after, .markdown-body>h5:hover::after, .markdown-body>h6:hover::after {
     animation: msdos-cursor-title 1s step-start 0s infinite;
     -webkit-animation: msdos-cursor-title 1s step-start 0s infinite;

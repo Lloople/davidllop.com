@@ -19,7 +19,7 @@ class Post extends Sheet implements Htmlable
 
     public function toHtml(): string
     {
-        return Cache::rememberForever("posts:{$this->slug}:html", function () {
+        return Cache::rememberForever("posts:{$this->slug}:html", static function () {
             return view('_partials.post')
                 ->with('post', $this)
                 ->render();
@@ -31,7 +31,7 @@ class Post extends Sheet implements Htmlable
         return $sheets
             ->all()
             ->sortByDesc('date')
-            ->map(function (self $post) {
+            ->map(static function (self $post) {
                 return [
                     'id' => route('post', [$post->slug]),
                     'title' => $post->title,

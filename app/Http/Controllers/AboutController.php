@@ -7,9 +7,9 @@ use Illuminate\View\View;
 
 class AboutController
 {
-    const GYM_SKIPPED = [
+    private const GYM_SKIPPED = [
         ['2018-12-06', '2018-12-09'],
-        ['2018-12-17', '2019-01-01']
+        ['2018-12-17', '2019-01-01'],
     ];
 
     public function __invoke(): View
@@ -21,7 +21,7 @@ class AboutController
     {
         $begin = date('2018-10-01');
 
-        $totalDaysSkipped = collect(self::GYM_SKIPPED)->reduce(function ($carry, $skipped) {
+        $totalDaysSkipped = collect(self::GYM_SKIPPED)->reduce(static function ($carry, $skipped) {
 
             $daysSkipped = is_array($skipped)
                 ? Carbon::parse($skipped[0])->diffInDays($skipped[1])
@@ -31,6 +31,5 @@ class AboutController
         }, 0);
 
         return now()->diffInDays($begin) - $totalDaysSkipped;
-
     }
 }

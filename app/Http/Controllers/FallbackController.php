@@ -17,7 +17,7 @@ class FallbackController
 
     private function isPostsPreviousUrl(string $slug, Sheets $sheets)
     {
-        return $sheets->all()->first(function ($post) use ($slug) {
+        return $sheets->all()->first(static function ($post) use ($slug) {
             return $post->slug === $slug;
         }) !== null;
     }
