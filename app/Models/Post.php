@@ -19,7 +19,7 @@ class Post extends Sheet implements Htmlable
 
     public function toHtml(): string
     {
-        return Cache::rememberForever("posts:{$this->slug}:html", static function () {
+        return Cache::rememberForever("posts:{$this->slug}:html", function () {
             return view('_partials.post')
                 ->with('post', $this)
                 ->render();
