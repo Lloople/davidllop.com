@@ -3,9 +3,9 @@
 namespace App\Providers;
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Foundation\Support\Providers\RouteServiceProvider as Provider;
 
-class RouteServiceProvider extends ServiceProvider
+class RouteServiceProvider extends Provider
 {
     /**
      * This namespace is applied to your controller routes.
