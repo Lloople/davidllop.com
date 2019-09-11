@@ -11,9 +11,9 @@
 
 @import '404';
 
-@import "../../../node_modules/primer-markdown/build/build.css";
+@import "../../node_modules/primer-markdown/build/build.css";
 
-@import "../../../node_modules/github-syntax-light/lib/github-light.css";
+@import "../../node_modules/github-syntax-light/lib/github-light.css";
 
 .flip-h {
   -webkit-transform: scaleX(-1);transform: scaleX(-1);
