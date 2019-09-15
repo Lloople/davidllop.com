@@ -25,37 +25,24 @@
 @section('content')
     <div class="elements-breath-10">
         <h2 class="retro-title-2 pt-0">C:\Editor></h2>
-        <p>
-            I tried almost every IDE and Code Editor out there but I always come back to <a
-                    href="https://www.jetbrains.com/phpstorm">PhpStorm</a>. I have it conigured
-            to display just the code hiding tabs, toolbars, sidebars, breadcrumbs... Most of the time I have the IDE
-            window at the center of the screen in a
-            small size. This helps me to stay focused in a few lines at a time.
-        </p>
+        <p>For the last years I've been using <a href="https://www.jetbrains.com/phpstorm">PhpStorm</a>, but since August 2019 I jumped into the 
+        <a href="">Visual Studio Code</a> world. Mostly because of the awesome <a href="https://twitter.com/Robb0wen/status/1122552691333451776">Synthwave'84</a> theme 
+        <a href="https://twitter.com/Robb0wen">Robb Owen</a> baked for all of us that love 80's aesthetics. 
+        I installed a bunch of plugins to work with Laravel and Vue. It's not as awesome as PHPStorm suggesting imports or moving between classes with a click, but I also want some challenging when navigating through the code. 
+        It helps me thinking twice about where to write the next function.</p>
+        <p>As I did with PHPStorm, I usually hide every UI section to focus on the code. I do everything with shortcuts.</p>
         <div class="text-center mx-auto my-6">
-
             <img class="mx-auto text-center xl:w-3/4" src="/media/uses/ide_setup.jpg"
                  alt="My desktop with IDE at the center">
         </div>
-        <h4 class="retro-title-4">C:\Editor\Theme></h4>
-        <p>I'll always go to the dark side on this matter. For now I'm using the default's IDE configuration:
-            Darcula.</p>
-        <p>I've tried the Material Theme for PHP Storm but it started to feel buggy after a few days. Also, it doesn't have
-        to much importancy for me since I hide everything except the code.</p>
 
         <h4 class="retro-title-4">C:\Editor\Color Scheme></h4>
         <p>
-            Currently I'm using <a href="https://rainglow.io/preview/#lavender">Lavender</a>. I've always used dark
+            Currently I'm using <a href="https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode">Synthwave'84</a>. I've always used dark
             color schemes and I chosed this one
-            because of it's <a
-                    href="https://www.youtube.com/playlist?list=PLtD0K2KQF24tC5slodfxK6z7eMo01VHS0">Retrowave</a>
-            feeling.
+            because of it's <a href="https://www.youtube.com/playlist?list=PLtD0K2KQF24tC5slodfxK6z7eMo01VHS0">Retrowave</a> feeling.
         </p>
-        <p>
-            This theme is included in <a href="https://twitter.com/daylerees">Dayle Rees</a>'s collection <a
-                    href="https://rainglow.io">Rainglow</a>. As easy as install a plugin in your
-            IDE or Editor of choice and choose the colors that best suits you.
-        </p>
+        
         <h2 class="retro-title-2">C:\Window Management></h2>
         <p>
             Since I moved from Windows back in the day I missed some way to arrange the windows on the screen. I'm using
