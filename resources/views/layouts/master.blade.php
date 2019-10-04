@@ -55,6 +55,10 @@
 </head>
 <body class="bg-purple-darkest text-purple-lighter text-xl">
 
+<div credit="Image by Lorenzo Herrera on Unsplash" 
+     credit-url="https://unsplash.com/@lorenzoherrera?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+    class="bg-image"></div>
+
 <div class="xl:flex xl:flex-row xl:h-screen w-full bg-purple-darkest">
 
     <main class="xl:relative | w-full xl:px-24 pt-12 h-full | xl:overflow-auto">
