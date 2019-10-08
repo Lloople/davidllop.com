@@ -184,3 +184,15 @@ nav li:hover {
 ::-moz-selection {
   background: #ff00db; /* Gecko Browsers */
 }
+
+.bg-image {
+  background-image: url(../media/background.jpg);
+  background-position: center;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-size: cover;
+  opacity: 0.3;
+}
