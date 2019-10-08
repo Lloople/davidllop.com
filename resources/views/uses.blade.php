@@ -73,7 +73,7 @@
         <p>
             Currently I'm using the MacOSX Terminal App. I always wanted to try all that stuff out there, <a
                     href="https://iterm2.com">iTerm2</a>, <a href="https://ohmyz.sh">Oh My ZSH</a>...
-            But never felt the necessity neither found the time.
+            But never felt the need neither found the time.
         </p>
         <h2 class="retro-title-2">C:\Writing></h2>
         <p>
@@ -83,7 +83,7 @@
         </p>
         <h2 class="retro-title-2">C:\Other Apps></h2>
         <p>For Email, Calendar, Reminders and Notes I use the Apple's default apps.</p>
-        <p>For music I use Spotify and honestly I can't live without it.</p>
+        <p>For music I use Spotify and honestly I can't live without it. Recently I've also been visiting <a href="https://poolside.fm">Poolside FM</a> as it's really cool</p>
 
         <h2 class="retro-title-2">C:\Desktop Setup></h2>
         <p>I own a Macbook Pro 13" with TouchBar 2017 and I'm very happy with it. The keyboard feels weird at first but
@@ -122,10 +122,9 @@
                 MM 300 Extended</a> Mouse Pad.
             I bought it in an offer along with the mouse and the keyboard but didn't regret it. The feel is so premium
             and it has boat sails on it!</p>
-        <p>Desktop table is nothing important by now. It was here when we moved in and can't get rid of it. Chair is not
-            listed yet, I'm waiting for
-            <a href="https://twitter.com/christophrumpel/status/1078374544870658050">Christoph Rumpel's decision</a>
-            before buying my own.</p>
+        <p>Desktop table is nothing important by now. It was here when we moved in and can't get rid of it.</p>
+        <p>My chair is <a href="https://www.ikea.com/us/en/p/jaervfjaellet-office-chair-with-armrests-gunnared-dark-gray-black-s59275634/">Järvfjället</a> from 
+        IKEA (Yes, I had to copy the name from the website). It's the best chair I've ever tried and can't be happier with it. I just hope someday I would have the same at work 🤞.</p>
         <p>I have a lava lamp on the corner. Can't remember where I bought it but it's just awesome to have it there
             while coding.</p>
     </div>
