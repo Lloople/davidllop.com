@@ -39,47 +39,46 @@
         <p>I'm constantly learning new stuff about programming styles and patterns. Mostly focused on the PHP
             world, but I'm doing some steps into the frontend too. I bought a few courses from <a
                     href="https://twitter.com/adamwathan">Adam Wathan</a> and <a
-                    href="https://twitter.com/wesbos">Wes Bos</a> in the last year. Finally I bought a lifetime
-            <a href="https://laracasts.com">Laracasts</a> subscription the last december and can't be happier
-            with all the content it has.</p>
+                    href="https://twitter.com/wesbos">Wes Bos</a>. I also have a lifetime
+            <a href="https://laracasts.com">Laracasts</a> subscription and can't be happier
+            with all the content it has. There's always new content to learn.</p>
 
         <h2 class="retro-title-4">C:\On the side></h2>
         <p>I enjoy building web apps with Laravel and Vue.js. I used to develop API's at my previous job and
             totally loved it, but now I'm more into console commands and backends too.</p>
+        <p>I'm starting to experiment with some Vue.js apps, without any back-end code related.</p>
 
         <h2 class="retro-title-4">C:\Open Source></h2>
-        <p>I'm starting contributing to the Open Source Community. I write a blog management system as my first
-            contribution followed by a few small packages focused to a Laravel application. I'm also proud of a
-            very small contributions into the Laravel framework itself.</p>
+        <p>I have contributed with small tweaks to the Laravel framework itself. I also own a few small packages focused to a Laravel application. 
+        At the company, I always try to find isolated pieces of code we can release as an Open Source package.</p>
 
         <h2 class="retro-title-4">C:\Chatbots></h2>
         <p>I discovered the world of chatbots a while ago and I'm building them with <a
                     href="https://botman.io">botman.io</a>. I already have a <a
                     href="https://github.com/Lloople?utf8=✓&tab=repositories&q=bot-&type=&language=php">few
                 projects on my GitHub</a>. I think it's a topic with a lot of potential for both private and
-            commercial use. </p>
+            commercial use.</p>
 
         <h2 class="retro-title-4">C:\Watching></h2>
-        <p>I'm following <strong>Game of Thrones</strong> (like everyone else), but also <strong>The Man in The
-                High Castle</strong>, <strong>Startup</strong> and <strong>Electric Dreams</strong> from Prime
-            Video.</p>
-        <p>Recently I've discovered Lost. Everybody tells me that the ending is one of the worst ever made but the rest
-            of
-            the show was great. Even with that I decided to give it a shot.</p>
+        <p>I'm really disappointed by how Game of Thrones ended. I'm waiting for a new Altered Carbon season, and from
+        Disney+ to be released here in Spain.</p>
+        <p> I love shows like Black Mirror, Electric Dreams, The Mand in The High Castle...</p>
+
         <h2 class="retro-title-4">C:\Books></h2>
         <p>I read <strong>Artemis</strong> and <strong>The Martian</strong> by <a
                     href="https://twitter.com/andyweirauthor">Andy Weir</a> which I consider a masterpiece.</p>
+        <p>I enjoyed both books wrote by Ernest Cline, Ready Player One and Armada.</p>
         <p>I've also read <strong>Song of Ice and Fire</strong> and all the stories about <strong>Sherlock
                 Holmes</strong></p>
         <p>I'm planning to read <strong>The Man In The High Castle</strong>, since I enjoyed the TV show a lot.
             I'm a fan of <strong>The Name of The Wind</strong> by Patrick Rothfuss. I've also read <strong>Harry
                 Potter</strong> books a tons of times and enjoyed <strong>Tales from Earthsea</strong> a lot.
         </p>
-        <p>I'm starting to read the <strong>Dune</strong> books.</p>
-        <p>I'm finishing Armada, wrote by Ernest Cline, the guy who wrote Ready Player One.</p>
+        <p>I'm starting to read the <strong>Dune</strong> books and a collection of short stories by Isaac Asimov.</p>
+        <p>Recently I read Fahrenheit 451 and I totally love it.</p>
 
         <h2 class="retro-title-4">C:\Fitness></h2>
-        <p>I'm subscribed to a gym near work since October 2018. I'm going every single day in the morning
+        <p>I'm subscribed to a gym near work since October 2018. I try to go every single day in the morning
             (unless I'm traveling or something big happened). That's
             about {{ $gymDays }} days!</p>
         <p>I'm starting to feel great with myself and it's helping me with my back pain and mental health. In my
@@ -93,7 +92,9 @@
             <li><del><a href="https://laravel.com/docs/5.7/horizon">Laravel Horizon</a></del></li>
             <li><del><a href="https://github.com/laravel/telescope">Laravel Telescope</a></del></li>
             <li><a href="https://nova.laravel.com">Laravel Nova</a></li>
-            <li><a href="https://larecipe.binarytorch.com.my/docs/1.2/overview">LaRecipe</a></li>
+            <li><del><a href="https://larecipe.binarytorch.com.my/docs/1.2/overview">LaRecipe</a></del></li>
+            <li><del><a href="https://forge.laravel.com">Laravel Forge</a></del></li>
+            <li><a href="https://vapor.laravel.com">Laravel Vapor</a></li>
             <li><a href="https://vuepress.vuejs.org">VuePress</a></li>
             <li><a href="https://sailsjs.com">Sails Framework</a></li>
         </ul>

@@ -43,6 +43,7 @@
             because of it's <a href="https://www.youtube.com/playlist?list=PLtD0K2KQF24tC5slodfxK6z7eMo01VHS0">Retrowave</a> feeling.
         </p>
         
+        
         <h2 class="retro-title-2">C:\Window Management></h2>
         <p>
             Since I moved from Windows back in the day I missed some way to arrange the windows on the screen. I'm using
@@ -50,6 +51,7 @@
             It works with keyboard shortcuts instead of moving windows to the edge. I always modify the keystrokes for
             the four corners to match <code>cmd+opt+ctrl+[1,2,3,4]</code>.
         </p>
+        
         <h2 class="retro-title-2">C:\Browser></h2>
         <p>
             I use Safari as my personal browser because of all the features it has regarding syncing with the iPhone. I
@@ -57,6 +59,7 @@
             that currently it's the "less standard" browser out there. For develop purposes I prefer Google Chrome for
             request inspection and console tasks.
         </p>
+        
         <h2 class="retro-title-2">C:\Environment></h2>
         <p>
             I use <a href="https://laravel.com/docs/5.7/valet">Valet</a> for local development. Previously I've used <a
@@ -64,30 +67,34 @@
             great results, but now I'm focusing on newer sites without backwards compatibility, so I'm fine with just
             one version of PHP installed in my machine.
         </p>
+        
         <h2 class="retro-title-2">C:\Database></h2>
         <p>
             <a href="http://sequelpro.com">Sequel Pro</a>. That's it. It's the best MySQL manager out there for free,
             it's <a href="https://github.com/sequelpro/sequelpro">open source and currently maintained</a>.
         </p>
+        
         <h2 class="retro-title-2">C:\Console></h2>
         <p>
-            Currently I'm using the MacOSX Terminal App. I always wanted to try all that stuff out there, <a
-                    href="https://iterm2.com">iTerm2</a>, <a href="https://ohmyz.sh">Oh My ZSH</a>...
-            But never felt the need neither found the time.
+        Currently I'm using the MacOSX Terminal App. Since the update to Catalina, now MacOSX works with zsh by default, 
+        so I installed <a href="https://ohmyz.sh">Oh My ZSH</a> with the <strong>robbyrussell</strong> theme.
         </p>
+
         <h2 class="retro-title-2">C:\Writing></h2>
         <p>
             When I have to write something I chose <a href="https://macdown.uranusjr.com">MacDown</a>. It's easy to use
             and can see a live preview of the result. For writing emojis
             I use <a href="https://matthewpalmer.net/rocket/">Rocket</a>.
         </p>
+        
         <h2 class="retro-title-2">C:\Other Apps></h2>
         <p>For Email, Calendar, Reminders and Notes I use the Apple's default apps.</p>
-        <p>For music I use Spotify and honestly I can't live without it. Recently I've also been visiting <a href="https://poolside.fm">Poolside FM</a> as it's really cool</p>
+        <p>For music I use Spotify and honestly I can't live without it. Recently I've also been visiting <a href="https://poolside.fm">Poolside FM</a> as it's really cool.</p>
 
         <h2 class="retro-title-2">C:\Desktop Setup></h2>
         <p>I own a Macbook Pro 13" with TouchBar 2017 and I'm very happy with it. The keyboard feels weird at first but
-            I got used to it and can't use the previous version anymore.</p>
+            I got used to it and can't use the previous version anymore. I've suffered a few times the keys issue, getting a free
+            repair from Apple.</p>
 
         <div class="text-center mx-auto my-6">
             <img class="mx-auto text-center xl:w-3/4" src="/media/uses/desk.jpg" alt="My desk.">
@@ -96,10 +103,7 @@
         <h4 class="retro-title-4">C:\Desktop Setup\Output></h4>
         <p>At home I have a <a href="https://www.amazon.com/Dell-UltraSharp-27-Inch-LED-Lit-Monitor/dp/B00P0EQD1Q">Dell
                 UltraSharp U2715H</a> monitor for work (MacBook)
-            and Gaming (Windows, SNES Mini and NES Mini.
-            <del>PlayStation Classic soon...</del>
-            ).
-        </p>
+            and Gaming (Windows, SNES Mini, NES Mini and PlayStation Classic).</p>
         <p>I use this <a href="https://www.amazon.com/Laptop-Bestand-Macbook-Cooling-Patented/dp/B079N75V58">Laptop
                 Stand Bestand</a> to put my Macbook side by side with the
             monitor and have two screens.</p>
