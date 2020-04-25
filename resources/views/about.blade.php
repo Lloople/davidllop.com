@@ -97,5 +97,8 @@
             <li><a href="https://vapor.laravel.com">Laravel Vapor</a></li>
             <li><a href="https://vuepress.vuejs.org">VuePress</a></li>
             <li><a href="https://sailsjs.com">Sails Framework</a></li>
+            <li><a href="https://laravel-livewire.com">Laravel LiveWire</a></li>
+            <li><a href="https://inertiajs.com/">Inertia.js</a></li>
+            <li>a href="https://reactnative.dev/">React Native</a></li>
         </ul>
 @endsection
